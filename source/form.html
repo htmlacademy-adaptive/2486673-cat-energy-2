@@ -35,15 +35,15 @@
   <main class="main-form">
     <div class="section-container">
       <h1 class="visually-hidden">Подбор программы индивидуального питания для кота</h1>
-      <p class="form__title form__title--main">Подбор программы</p>
-      <p class="form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-      <form class="main-form__form form" action="https://echo.htmlacademy.ru/" method="get">
+      <p class="main-form__title">Подбор программы</p>
+      <p class="main-form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <form class="main-form__form form" action="https://echo.htmlacademy.ru/" method="post">
         <fieldset class="form__cat-data cat-data">
           <legend class="visually-hidden">Данные кота</legend>
           <ul class="form__list">
             <li class="form__item">
               <label class="form__label">Имя:*
-                <input class="form__input" type="name" name="cat-data" placeholder="Барсик" required>
+                <input class="form__input" type="text" name="cat-data" placeholder="Барсик" required>
               </label>
             </li>
             <li class="form__item">
@@ -53,7 +53,7 @@
             </li>
             <li class="form__item">
               <label class="form__label">Возраст (лет):
-                <input class="form__input" type="name" name="cat-data" placeholder="7">
+                <input class="form__input" type="number" name="cat-data" placeholder="7">
               </label>
             </li>
           </ul>
@@ -79,12 +79,12 @@
         <fieldset class="form__cat-data owner-data">
           <legend class="visually-hidden">Контактные данные владельца кота</legend>
           <ul class="form__list">
-            <li class="form__item form__item">
+            <li class="form__item">
               <label class="form__label">E-mail:*
                 <input class="form__input form__input--owner" type="email" name="owner-email" placeholder="kuklachev@gmail.com" required>
               </label>
             </li>
-            <li class="form__item form__item">
+            <li class="form__item">
               <label class="form__label">Телефон:*
                 <input class="form__input form__input--owner" type="tel" name="owner-phone" placeholder="8 (960) 900-60-90" required>
               </label>
