@@ -3,17 +3,25 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Подбор программы</title>
+  <title>Кэт энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple.png"><!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo" href="#">
-      <img class="main-header__logo-image" src="images/logo-image.svg" width="33" height="38" alt="Логотип Cat energy с изображением кота.">
-      <img class="main-header__logo2-image" src="images/logo-letters.svg" width="101" height="18" alt="Cat energy.">
+      <picture>
+        <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
+        <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
+        <img class="main-header__logo-image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat energy с изображением кота.">
+      </picture>
+      <img class="main-header__logo-letters" src="images/logo-letters.svg" width="101" height="18" alt="Cat energy.">
     </a>
     <button class="main-header__toggle" type="button">
       <span class="visually-hidden">Открыть меню</span>
@@ -121,7 +129,11 @@
     </div>
     <section class="contacts">
       <h2 class="visually-hidden">Карта с местоположением компании кэт энерджи</h2>
-      <img class="contacts-map" src="images/location.png" width="320" height="362" alt="Карта с местоположением компании Cat energy.">
+      <picture>
+        <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/location-desktop@1x.png 1x, images/location-desktop@2x.png 2x">
+        <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/location-tablet@1x.png, images/location-tablet@2x.png 2x">
+        <img class="contacts-map" src="images/location-mobile@1x.png" srcset="images/location-mobile@2x.png 2x" width="320" height="362" alt="Карта с местоположением компании Cat energy.">
+      </picture>
       <div class="section-container">
         <div class="contacts-invite">
           <p class="contacts-invite__title">Приглашаем к сотрудничеству дилеров!</p>
