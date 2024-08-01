@@ -67,7 +67,7 @@
                 <dd class="production-card__description">700 ₽</dd>
               </dl>
             </div>
-            <a class="production-card__button card-button" href="#">Заказать</a>
+            <a class="production-card__button card-button button" href="#">Заказать</a>
           </li>
           <li class="production__item production-card">
             <a class="production-card__link" href="#">
@@ -90,7 +90,7 @@
                 <dd class="production-card__description">1000 ₽</dd>
               </dl>
             </div>
-            <a class="production-card__button card-button" href="#">Заказать</a>
+            <a class="production-card__button card-button button" href="#">Заказать</a>
           </li>
           <li class="production__item production-card">
             <a class="production-card__link" href="#">
@@ -113,7 +113,7 @@
                 <dd class="production-card__description">700 ₽</dd>
               </dl>
             </div>
-            <a class="production-card__button card-button" href="#">Заказать</a>
+            <a class="production-card__button card-button button" href="#">Заказать</a>
           </li>
           <li class="production__item production-card">
             <a class="production-card__link" href="#">
@@ -136,7 +136,7 @@
                 <dd class="production-card__description">1000 ₽</dd>
               </dl>
             </div>
-            <a class="production-card__button card-button" href="#">Заказать</a>
+            <a class="production-card__button card-button button" href="#">Заказать</a>
           </li>
           <li class="production__item production-card">
             <a class="production-card__link" href="#">
@@ -159,7 +159,7 @@
                 <dd class="production-card__description">400 ₽</dd>
               </dl>
             </div>
-            <a class="production-card__button card-button" href="#">Заказать</a>
+            <a class="production-card__button card-button button" href="#">Заказать</a>
           </li>
           <li class="production__item production-card">
             <a class="production-card__link" href="#">
@@ -182,7 +182,7 @@
                 <dd class="production-card__description">700 ₽</dd>
               </dl>
             </div>
-            <a class="production-card__button card-button" href="#">Заказать</a>
+            <a class="production-card__button card-button button" href="#">Заказать</a>
           </li>
           <li class="production__item production-card">
             <a class="production-card__link" href="#">
@@ -202,10 +202,10 @@
                 <dt class="production-card__term">Вкус</dt>
                 <dd class="production-card__description">Рис</dd>
                 <dt class="production-card__term">Цена</dt>
-                <dd class="production-card__descriptionn">500 ₽</dd>
+                <dd class="production-card__description">500 ₽</dd>
               </dl>
             </div>
-            <a class="production-card__button card-button" href="#">Заказать</a>
+            <a class="production-card__button card-button button" href="#">Заказать</a>
           </li>
           <li class="production__item production-card production-card--more">
             <a class="production-card__link" href="#">
@@ -216,7 +216,7 @@
                 <h3 class="production-card__title production-card__title--more">Показать еще 100500 товаров</h3>
                 <p class="production-card__term production-card__term--more">На самом деле вкусов гораздо больше!</p>
               </a>
-              <a class="production-card__button card-button card-button--more" href="#">Показать все</a>
+              <a class="production-card__button card-button card-button--more button" href="#">Показать все</a>
             </div>
           </li>
         </ul>
@@ -238,7 +238,7 @@
                 <span class="additional-card__description">200 ₽</span>
               </li>
             </ul>
-            <a class="additional-card__button card-button" href="#">Заказать</a>
+            <a class="additional-card__button card-button button" href="#">Заказать</a>
           </li>
           <li class="additional__item additional-card">
             <a class="additional-card__link" href="#">
@@ -252,7 +252,7 @@
                 <span class="additional-card__description">50 ₽</span>
               </li>
             </ul>
-            <a class="additional-card__button card-button" href="#">Заказать</a>
+            <a class="additional-card__button card-button button" href="#">Заказать</a>
           </li>
           <li class="additional__item additional-card">
             <a class="additional-card__link" href="#">
@@ -266,7 +266,7 @@
                 <span class="additional-card__description">100 ₽</span>
               </li>
             </ul>
-            <a class="additional-card__button card-button" href="#">Заказать</a>
+            <a class="additional-card__button card-button button" href="#">Заказать</a>
           </li>
           <li class="additional__item additional-card">
             <a class="additional-card__link" href="#">
@@ -280,7 +280,7 @@
                 <span class="additional-card__description">300 ₽</span>
               </li>
             </ul>
-            <a class="additional-card__button card-button" href="#">Заказать</a>
+            <a class="additional-card__button card-button button" href="#">Заказать</a>
           </li>
         </ul>
         <div class="additional__promo promo">
@@ -293,10 +293,9 @@
         <h2 class="subscription__title">Акции и новинки</h2>
         <p class="subscription__description">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
         <form class="subscription__form" action="https://echo.htmlacademy.ru" method="post">
-          <label class="visually-hidden">Форма подписки на рассылку
-            <input class="subscription__input" name="email" type="email" required placeholder="kuklachev@gmail.com">
-          </label>
-          <button class="subscription__button card-button" type="submit">Подписаться</button>
+          <label class="visually-hidden" for="subscription-input">Форма подписки на рассылку</label>
+          <input class="subscription__input" id="subscription-input" name="email" type="email" required value="kuklachev@gmail.com">
+          <button class="subscription__button card-button button" type="submit">Подписаться</button>
         </form>
       </div>
     </section>

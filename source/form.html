@@ -46,22 +46,22 @@
       <p class="main-form__title">Подбор программы</p>
       <p class="main-form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form class="main-form__form form" action="https://echo.htmlacademy.ru/" method="post">
-        <fieldset class="form__cat-data cat-data">
+        <fieldset class="form__cat-data">
           <legend class="visually-hidden">Данные кота</legend>
           <ul class="form__list">
             <li class="form__item">
               <label class="form__label">Имя:*
-                <input class="form__input" type="text" name="cat-data" placeholder="Барсик" required>
+                <input class="form__input" type="text" name="cat-data" value="Барсик" required>
               </label>
             </li>
             <li class="form__item">
               <label class="form__label">Вес (кг):*
-                <input class="form__input" type="number" name="cat-data" placeholder="7" required>
+                <input class="form__input" type="number" name="cat-data" value="7" required>
               </label>
             </li>
             <li class="form__item">
               <label class="form__label">Возраст (лет):
-                <input class="form__input" type="number" name="cat-data" placeholder="7">
+                <input class="form__input" type="number" name="cat-data" value="7">
               </label>
             </li>
           </ul>
@@ -89,19 +89,19 @@
           <ul class="form__list">
             <li class="form__item">
               <label class="form__label">E-mail:*
-                <input class="form__input form__input--owner" type="email" name="owner-email" placeholder="kuklachev@gmail.com" required>
+                <input class="form__input form__input--owner" type="email" name="owner-email" value="kuklachev@gmail.com" required>
               </label>
             </li>
             <li class="form__item">
               <label class="form__label">Телефон:*
-                <input class="form__input form__input--owner" type="tel" name="owner-phone" placeholder="8 (960) 900-60-90" required>
+                <input class="form__input form__input--owner" type="tel" name="owner-phone" value="8 (960) 900-60-90" required>
               </label>
             </li>
           </ul>
         </fieldset>
         <h2 class="form__title">Комментарий</h2>
         <label class="visually-hidden" for="form-comments">Напишите о повадках своего кота</label>
-        <textarea class="form__input form-comments" id="form-comments" name="form-comments" placeholder="Расскажите обо всех повадках кота"></textarea>
+        <textarea class="form__input form-comments" id="form-comments" name="form-comments">Расскажите обо всех повадках кота</textarea>
         <fieldset class="form__cat-data additional-data">
           <legend class="visually-hidden">Дополнительные пожелания по питанию</legend>
           <ul class="form__list">
