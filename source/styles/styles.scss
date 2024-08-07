@@ -9,32 +9,21 @@
 
 //index.html
 
-@import "./blocks/main-header.scss";
 @import "./blocks/main-navigation.scss";
-@import "./blocks/main-index.scss";
 @import "./blocks/hero.scss";
 @import "./blocks/button.scss";
-@import "./blocks/section-container.scss";
-@import "./blocks/options.scss";
 @import "./blocks/options-item.scss";
 @import "./blocks/benefits.scss";
 @import "./blocks/example.scss";
-@import "./blocks/example-list.scss";
 @import "./blocks/example-item.scss";
 @import "./blocks/example-price.scss";
 @import "./blocks/example-slider.scss";
-@import "./blocks/slider-button.scss";
-@import "./blocks/contacts.scss";
-@import "./blocks/contacts-map.scss";
 @import "./blocks/contacts-invite.scss";
 @import "./blocks/footer.scss";
-@import "./blocks/footer-logo.scss";
-@import "./blocks/social-list.scss";
 @import "./blocks/copyright.scss";
 
 // catalog.html
 
-@import "./blocks/catalog.scss";
 @import "./blocks/production.scss";
 @import "./blocks/production-card.scss";
 @import "./blocks/additional.scss";
@@ -46,5 +35,3 @@
 
 @import "./blocks/main-form.scss";
 @import "./blocks/form.scss";
-@import "./blocks/cat-goal.scss";
-@import "./blocks/additional-data.scss";
