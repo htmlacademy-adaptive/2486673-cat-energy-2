@@ -1,3 +1,67 @@
+.benefits__list {
+  margin: 0;
+  list-style: none;
+}
+
+.benefits__item {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.benefits__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background-color: $green;
+}
+
+.benefits__item--nutrition::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../../icons/stack.svg#benefits-nutrition");
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 32px;
+}
+
+.benefits__item--powder::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../../icons/stack.svg#benefits-powder");
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 32px;
+}
+
+.benefits__item--functional::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../../icons/stack.svg#benefits-functional");
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 32px;
+}
+
+.benefits__item--change::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../../icons/stack.svg#benefits-change");
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 32px;
+}
+
 .benefits__title {
   font-weight: 400;
   font-size: 36px;
@@ -11,4 +75,5 @@
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+  margin: 0;
 }
