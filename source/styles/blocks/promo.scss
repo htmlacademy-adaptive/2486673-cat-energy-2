@@ -1,11 +1,26 @@
 .promo {
   background-color: #64a73c;
+  padding: 60px;
+  padding-bottom: 40px;
+  min-width: 280px;
+  min-height: 290px;
 }
 
 .promo__description {
+  position: relative;
   font-family: $lato-font;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   color: #ffffff;
+}
+
+.promo__description::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 78px;
+  height: 80px;
+  background-image: url("../../icons/stack.svg#promo-gift");
 }

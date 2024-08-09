@@ -9,17 +9,21 @@
 
 //index.html
 
+@import "./blocks/main-header.scss";
 @import "./blocks/main-navigation.scss";
 @import "./blocks/hero.scss";
 @import "./blocks/button.scss";
+@import "./blocks/options.scss";
 @import "./blocks/options-item.scss";
 @import "./blocks/benefits.scss";
 @import "./blocks/example.scss";
 @import "./blocks/example-item.scss";
 @import "./blocks/example-price.scss";
 @import "./blocks/example-slider.scss";
+@import "./blocks/slider-button.scss";
 @import "./blocks/contacts-invite.scss";
 @import "./blocks/footer.scss";
+@import "./blocks/social-list.scss";
 @import "./blocks/copyright.scss";
 
 // catalog.html

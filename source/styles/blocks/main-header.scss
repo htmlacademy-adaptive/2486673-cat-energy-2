@@ -1,0 +1,30 @@
+.main-header__logo {
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.main-header__toggle {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-image: url("../../icons/stack.svg#menu-is-close");
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: center;
+  background-color: #ffffff;
+  min-height: 24px;
+  min-width: 24px;
+}
+
+.main-header__toggle--is-open {
+  background-image: url("../../icons/stack.svg#menu-is-open");
+}

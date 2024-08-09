@@ -1,3 +1,15 @@
+.form__cat-data {
+  border: none;
+}
+
+.form__list {
+  margin: 0;
+  list-style: none;
+}
+
+.form__item {
+  margin-bottom: 13px;
+}
 
 .form__title {
   font-family: $primary-font;
@@ -9,6 +21,8 @@
 }
 
 .form__label {
+  position: relative;
+  margin-left: 45px;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -16,12 +30,83 @@
 }
 
 .form__input {
+  position: relative;
   font-family: $primary-font;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
+}
+
+//Radio
+
+.form__label--radio::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -45px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #cdcdcd;
+}
+
+.form__input--radio:checked ~ .form__label--radio::after {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  left: -36px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: $green;
+}
+
+//Owner-data
+
+.form__label--mail::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -30px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../../icons/stack.svg#form-mail");
+}
+
+.form__label--phone::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -30px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../../icons/stack.svg#form-phone");
+}
+
+//Checkbox
+
+.form__label--checkbox::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -45px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid #cdcdcd;
+}
+
+.form__input--checkbox:checked ~ .form__label--checkbox::after {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  left: -38px;
+  background-image: url("../../icons/stack.svg#form-tick");
+  width: 18px;
+  height: 14px;
 }
 
 .form__remark {
