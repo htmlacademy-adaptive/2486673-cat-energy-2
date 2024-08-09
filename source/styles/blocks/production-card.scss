@@ -14,3 +14,13 @@
   text-align: center;
   color: #444444;
 }
+
+.production-card__link--more::after {
+  content: "";
+  position: relative;
+  top: 0;
+  left: 0;
+
+  width: 30px;
+  height: 30px;
+}
