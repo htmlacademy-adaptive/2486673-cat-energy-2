@@ -49,6 +49,10 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .options-item__link::after {
@@ -58,12 +62,13 @@
   top: 0;
   mask-image: url("../../icons/stack.svg#arrow-program");
   mask-repeat: no-repeat;
-  mask-size: 24px 10px;
+  mask-size: 32px 10px;
+  mask-position: -8px;
   background-color: #000000;
-  width: 24px;
-  height: 12px;
+  width: 32px;
+  height: 10px;
 }
 
 .options-item__link:hover::after {
-  mask-size: 32px, 10px;
+  mask-position: -3px;
 }

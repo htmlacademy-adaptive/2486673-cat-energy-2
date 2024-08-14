@@ -1,27 +1,19 @@
 .copyright__link {
-  position: relative;
   text-decoration: none;
 }
 
-.copyright__link::after {
-  content: "";
-  position: absolute;
-  top: -10px;
-  right: -40px;
-  width: 27px;
-  height: 34px;
-  mask-image: url("../../images/logo-copyright.svg");
-  background-color: #666666;
-}
+.copyright__logo {
+  color: #666666;
 
-.copyright__link:hover::after,
-.copyright__link:focus::after {
-  background-color: $green;
-}
+  &:hover,
+  &:focus {
+    color: $green;
+  }
 
-.copyright__link:active::after {
-  background-color: $green;
-  opacity: 0.3;
+  &:active {
+    color: $green;
+    opacity: 0.3;
+  }
 }
 
 .copyright__title {

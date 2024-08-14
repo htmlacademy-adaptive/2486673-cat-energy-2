@@ -8,6 +8,32 @@
   border: none;
   border-radius: 2px;
   padding: 0;
+
+  &:hover,
+  &focus {
+    background-color: $green;
+
+    &::before {
+      border: 2px solid $green;
+    }
+
+    &::after {
+      background-color: $green;
+    }
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    opacity: 0.6;
+
+    &::before {
+      border: 2px solid #5eaa2f;
+    }
+
+    &::after {
+      background-color: #5eaa2f;
+    }
+  }
 }
 
 .slider-button::before {
@@ -28,7 +54,7 @@
   position: absolute;
   bottom: 50%;
   left: 50%;
-  mask-image: url("../../stack.svg#arrows-slider");
+  mask-image: url("../../icons/stack.svg#arrows-slider");
   mask-size: 24px 18px;
   width: 24px;
   height: 18px;
