@@ -3,18 +3,29 @@
   background-color: #d9d9d9;
 }
 
-.options-item--slim::before {
+.options-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: $green;
+  border-radius: 50%;
+  min-width: 50px;
+  min-height: 53px;
+}
+
+.options-item--slim::after {
   content: "";
   position: absolute;
   left: 0;
   top: 0;
   background-image: url("../../icons/stack.svg#cat-sit");
   background-repeat: no-repeat;
-  min-width: 50px;
-  min-height: 53px;
+  min-width: 36px;
+  min-height: 50px;
 }
 
-.options-item--pro::before {
+.options-item--pro::after {
   content: "";
   position: absolute;
   left: 0;
@@ -22,7 +33,7 @@
   background-image: url("../../icons/stack.svg#cat-walk");
   background-repeat: no-repeat;
   min-width: 67px;
-  min-height: 50px;
+  min-height: 28px;
 }
 
 .options-item__title {
