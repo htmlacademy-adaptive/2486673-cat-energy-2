@@ -1,6 +1,29 @@
+.copyright__link {
+  text-decoration: none;
+}
+
+.copyright__logo {
+  color: #666666;
+
+  &:hover,
+  &:focus {
+    color: $green;
+  }
+
+  &:active {
+    color: $green;
+    opacity: 0.3;
+  }
+}
+
 .copyright__title {
   font-family: $lato-font;
   font-size: 16px;
   line-height: 20px;
   color: #444444;
+  cursor: pointer;
+
+  &:active {
+    opacity: 30%;
+  }
 }

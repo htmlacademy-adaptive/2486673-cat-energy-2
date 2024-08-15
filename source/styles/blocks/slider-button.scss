@@ -1,0 +1,63 @@
+.slider-button {
+  position: relative;
+  top: 0;
+  left: 60px;
+  width: 4px;
+  height: 256px;
+  background-color: #666666;
+  border: none;
+  border-radius: 2px;
+  padding: 0;
+
+  &:hover,
+  &focus {
+    background-color: $green;
+
+    &::before {
+      border: 2px solid $green;
+    }
+
+    &::after {
+      background-color: $green;
+    }
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    opacity: 0.6;
+
+    &::before {
+      border: 2px solid #5eaa2f;
+    }
+
+    &::after {
+      background-color: #5eaa2f;
+    }
+  }
+}
+
+.slider-button::before {
+  content: "";
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border: 2px solid #666666;
+  border-radius: 50%;
+  transform: translateX(-50%) translateY(50%);
+}
+
+.slider-button::after {
+  content: "";
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  mask-image: url("../../icons/stack.svg#arrows-slider");
+  mask-size: 24px 18px;
+  width: 24px;
+  height: 18px;
+  background-color: #666666;
+  transform: translateX(-50%) translateY(50%);
+}

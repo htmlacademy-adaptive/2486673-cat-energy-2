@@ -23,7 +23,7 @@
       </picture>
       <img class="main-header__logo-letters" src="images/logo-letters.svg" width="101" height="18" alt="Cat energy.">
     </a>
-    <button class="main-header__toggle" type="button">
+    <button class="main-header__toggle main-header__toggle--is-open" type="button">
       <span class="visually-hidden">Открыть меню</span>
     </button>
     <nav class="main-navigation">
@@ -95,7 +95,7 @@
       <div class="section-container">
         <h3 class="example__title">Живой пример</h3>
         <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <ul class="example-list">
+        <ul class="example__list">
           <li class="example__item example-item">
             <p class="example-item__title">5 кг</p>
             <p class="example-item__description">Снижение веса</p>
@@ -140,8 +140,11 @@
     <footer class="footer">
       <h2 class="visually-hidden">Социальные сети</h2>
       <div class="section-container">
-        <a class="footer-logo" href="#">
-          <img class="footer-logo__image" src="images/footer-logo.svg" width="128" height="24" alt="Логотип с надписью Cat energy">
+        <a class="footer__link" href="#">
+          <span class="visually-hidden">Логотип с надписью Cat energy</span>
+          <svg class="footer__logo" width="128" height="24">
+            <use href="images/sprite.svg#logo-footer"></use>
+          </svg>
         </a>
         <ul class="footer__social social-list">
           <li class="social-list__item">
@@ -161,9 +164,12 @@
           </li>
         </ul>
         <div class="footer__copyright copyright">
-          <span class="copyright__title">HTML Academy</span>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="copyright__logo" src="images/logo-copyright.svg" width="27" height="34" alt="Логотип html academy">
+            <span class="visually-hidden">Логотип HTML Academy</span>
+            <span class="copyright__title">HTML Academy</span>
+            <svg class="copyright__logo" width="27" height="35">
+              <use href="images/sprite.svg#logo-copyright"></use>
+            </svg>
           </a>
         </div>
       </div>

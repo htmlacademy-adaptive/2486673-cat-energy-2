@@ -14,3 +14,20 @@
   text-align: center;
   color: #444444;
 }
+
+.production-card__link {
+  margin: 0;
+  text-decoration: none;
+}
+
+.production-card__link--more::after {
+  content: "";
+  position: relative;
+  display: block;
+  top: 10;
+  left: 50%;
+  background-image: url("../../icons/stack.svg#card-more");
+  background-size: 30px;
+  width: 30px;
+  height: 30px;
+}
