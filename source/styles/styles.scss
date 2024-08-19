@@ -9,8 +9,10 @@
 
 //index.html
 
+@import "./blocks/page.scss";
 @import "./blocks/main-header.scss";
 @import "./blocks/main-navigation.scss";
+@import "./blocks/section-container.scss";
 @import "./blocks/hero.scss";
 @import "./blocks/button.scss";
 @import "./blocks/options.scss";
