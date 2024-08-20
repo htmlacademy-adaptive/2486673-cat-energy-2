@@ -1,4 +1,9 @@
 .hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   color: #ffffff;
   text-align: center;
   min-height: 480px;
@@ -12,7 +17,6 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  margin-left: calc(-50vw + 50%);
 }
 
 .hero__title {
@@ -31,8 +35,10 @@
 }
 
 .hero__image {
-  position: relative;
-  transform: translateY(-50%);
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  transform: translateY(20%);
 
   @media (min-width: $tablet) {
     position: static;

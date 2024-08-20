@@ -1,11 +1,17 @@
 .benefits__list {
+  display: grid;
+  grid-template-rows: auto;
+  row-gap: 20px;
   margin: 0;
+  padding: 40px 0;
   list-style: none;
 }
 
 .benefits__item {
   position: relative;
-  margin-bottom: 20px;
+  display: flex;
+  padding-left: 80px;
+  min-height: 60px;
 }
 
 .benefits__item::before {
@@ -21,8 +27,8 @@
 .benefits__item--nutrition::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 10px;
+  left: 15px;
   background-image: url("../../icons/stack.svg#benefits-nutrition");
   background-repeat: no-repeat;
   width: 30px;
@@ -32,8 +38,8 @@
 .benefits__item--powder::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 10px;
+  left: 15px;
   background-image: url("../../icons/stack.svg#benefits-powder");
   background-repeat: no-repeat;
   width: 30px;
@@ -43,8 +49,8 @@
 .benefits__item--functional::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 10px;
+  left: 15px;
   background-image: url("../../icons/stack.svg#benefits-functional");
   background-repeat: no-repeat;
   width: 30px;
@@ -54,8 +60,8 @@
 .benefits__item--change::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 10px;
+  left: 15px;
   background-image: url("../../icons/stack.svg#benefits-change");
   background-repeat: no-repeat;
   width: 30px;
@@ -63,10 +69,11 @@
 }
 
 .benefits__title {
+  margin: 0;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  text-align: center;
+  text-align: left;
   color: #000000;
 }
 
@@ -75,5 +82,5 @@
   font-size: 14px;
   line-height: 18px;
   color: #444444;
-  margin: 0;
+  margin: auto 0;
 }
