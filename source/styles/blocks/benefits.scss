@@ -5,6 +5,12 @@
   margin: 0;
   padding: 40px 0;
   list-style: none;
+
+  @media (min-width: $tablet) {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 37px 150px;
+  }
 }
 
 .benefits__item {
@@ -12,6 +18,11 @@
   display: flex;
   padding-left: 80px;
   min-height: 60px;
+
+  @media (min-width: $tablet) {
+    min-height: 280px;
+    padding-left: 0;
+  }
 }
 
 .benefits__item::before {
@@ -83,4 +94,8 @@
   line-height: 18px;
   color: #444444;
   margin: auto 0;
+
+  @media (min-width: $tablet) {
+    padding-right: 110px;
+  }
 }

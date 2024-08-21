@@ -36,6 +36,7 @@
 }
 
 .main-navigation__link {
+  position: relative;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
@@ -47,4 +48,27 @@
     font-size: 18px;
     line-height: 24px;
   }
+
+  @media (min-width: $desktop) {
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+  }
 }
+
+.main-navigation__link--current::after {
+  @media (min-width: $tablet) {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    right: 15px;
+    height: 2px;
+    background-color: $green;
+  }
+
+  @media (min-width: $desktop) {
+    background-color: #ffffff;
+  }
+}
+
