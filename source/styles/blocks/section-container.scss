@@ -9,17 +9,3 @@
     padding: 82px 110px 0;
   }
 }
-
-.section-container--benefits {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: repeat(5, auto);
-}
-
-.section-container--footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 240px;
-}

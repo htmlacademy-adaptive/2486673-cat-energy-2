@@ -1,5 +1,15 @@
 .example {
   background-color: #eaeaea;
+
+  @media (min-width: $tablet) {
+    background-color: #ffffff;
+  }
+}
+
+.example__wrapper {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: repeat(5, auto);
 }
 
 .example__title {
@@ -10,6 +20,10 @@
   line-height: 40px;
   text-align: center;
   color: #000000;
+
+  @media (min-width: $desktop) {
+    grid-column: 1 / 2;
+  }
 }
 
 .example__description {
@@ -18,6 +32,10 @@
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+
+  @media (min-width: $desktop) {
+    grid-column: 1 / 2;
+  }
 }
 
 .example__list {
@@ -27,13 +45,33 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet) {
+    grid-column: 1 / 2;
+  }
+
+  @media (min-width: $desktop) {
+    grid-column: 1 / 2;
+  }
 }
 
 .example__price {
   grid-column: 1 / -1;
   text-align: center;
+
+  @media (min-width: $tablet) {
+    grid-column: 2 / 3;
+  }
+
+  @media (min-width: $desktop) {
+    grid-column: 1 / 2;
+  }
 }
 
 .example-slider {
   grid-column: 1 / -1;
+
+  @media (min-width: $desktop) {
+    grid-column: 2 / 3;
+  }
 }

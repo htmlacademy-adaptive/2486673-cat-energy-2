@@ -1,6 +1,16 @@
 .contacts {
+  position: relative;
   display: flex;
   flex-direction: column-reverse;
+}
+
+.contacts__invite {
+  @media (min-width: $desktop) {
+    position: absolute;
+    top: 50%;
+    left: 110px;
+    min-height: 199px;
+  }
 }
 
 .contacts__map {
