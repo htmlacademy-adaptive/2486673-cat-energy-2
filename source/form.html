@@ -15,18 +15,22 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="index.html">
-      <picture>
-        <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
-        <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
-        <img class="main-header__logo-image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat energy с изображением кота.">
-      </picture>
-      <img class="main-header__logo-letters" src="images/logo-letters.svg" width="101" height="18" alt="Cat energy.">
-    </a>
-    <button class="main-header__toggle" type="button">
-      <span class="visually-hidden">Открыть меню</span>
-    </button>
-    <nav class="main-navigation">
+    <div class="main-header__wrapper">
+      <a class="main-header__link" href="#">
+        <picture>
+          <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
+          <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
+          <img class="main-header__logo-image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat energy с изображением кота.">
+        </picture>
+      </a>
+      <a class="main-header__link" href="#">
+        <img class="main-header__logo-letters" src="images/logo-letters.svg" width="101" height="18" alt="Cat energy.">
+      </a>
+      <button class="main-header__toggle main-header__toggle--open" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+    </div>
+    <nav class="main-navigation main-navigation--is-close">
       <ul class="main-navigation__list">
         <li class="main-navigation__item">
           <a class="main-navigation__link" href="index.html">Главная</a>
