@@ -45,11 +45,13 @@
     </nav>
   </header>
   <main class="main-form">
-    <div class="section-container">
+    <div class="section-container section-container--form">
       <h1 class="visually-hidden">Подбор программы индивидуального питания для кота</h1>
       <p class="main-form__title">Подбор программы</p>
       <p class="main-form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-      <form class="main-form__form form" action="https://echo.htmlacademy.ru/" method="post">
+    </div>
+    <form class="main-form__form form" action="https://echo.htmlacademy.ru/" method="post">
+      <div class="section-container section-container--form">
         <fieldset class="form__cat-data">
           <legend class="visually-hidden">Данные кота</legend>
           <ul class="form__list">
@@ -70,23 +72,25 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__cat-data cat-goal">
+        <fieldset class="form__cat-data form__cat-data--goal">
           <legend class="visually-hidden">Желаемый результат</legend>
           <ul class="form__list">
             <li class="form__item">
-              <input class="form__input" id="weight-loss" type="radio" name="cat-goal" value="weight-loss" checked>
-              <label class="form__label" for="weight-loss">Похудение</label>
+              <input class="form__input form__input--radio visually-hidden" id="weight-loss" type="radio" name="cat-goal" value="weight-loss" checked>
+              <label class="form__label form__label--radio" for="weight-loss">Похудение</label>
             </li>
             <li class="form__item">
-              <input class="form__input" id="weight-gain" type="radio" name="cat-goal" value="weight-gain">
-              <label class="form__label" for="weight-gain">Набор массы</label>
+              <input class="form__input form__input--radio visually-hidden" id="weight-gain" type="radio" name="cat-goal" value="weight-gain">
+              <label class="form__label form__label--radio" for="weight-gain">Набор массы</label>
             </li>
             <li class="form__item">
-              <input class="form__input" id="need-advice" type="radio" name="cat-goal" value="need-advice">
-              <label class="form__label" for="need-advice">Не знаю (Нужен ваш совет)</label>
+              <input class="form__input form__input--radio visually-hidden" id="need-advice" type="radio" name="cat-goal" value="need-advice">
+              <label class="form__label form__label--radio" for="need-advice">Не знаю (Нужен ваш совет)</label>
             </li>
           </ul>
         </fieldset>
+      </div>
+      <div class="section-container section-container--form">
         <h2 class="form__title">Контактные данные (владельца кота)</h2>
         <fieldset class="form__cat-data owner-data">
           <legend class="visually-hidden">Контактные данные владельца кота</legend>
@@ -110,27 +114,27 @@
           <legend class="visually-hidden">Дополнительные пожелания по питанию</legend>
           <ul class="form__list">
             <li class="form__item">
-              <input class="form__input" id="sweetener" type="checkbox" name="additional-meal" value="sweetener" checked>
-              <label class="form__label" for="sweetener">Cахарозаменитель</label>
+              <input class="form__input form__input--checkbox visually-hidden" id="sweetener" type="checkbox" name="additional-meal" value="sweetener" checked>
+              <label class="form__label form__label--checkbox" for="sweetener">Cахарозаменитель</label>
             </li>
             <li class="form__item">
-              <input class="form__input" id="water" type="checkbox" name="additional-meal" value="water">
-              <label class="form__label" for="water">Питьевая вода</label>
+              <input class="form__input form__input--checkbox visually-hidden" id="water" type="checkbox" name="additional-meal" value="water">
+              <label class="form__label form__label--checkbox" for="water">Питьевая вода</label>
             </li>
             <li class="form__item">
-              <input class="form__input" id="milk" type="checkbox" name="additional-meal" value="milk">
-              <label class="form__label" for="milk">Молоко</label>
+              <input class="form__input form__input--checkbox visually-hidden" id="milk" type="checkbox" name="additional-meal" value="milk">
+              <label class="form__label form__label--checkbox" for="milk">Молоко</label>
             </li>
             <li class="form__item">
-              <input class="form__input" id="vitamins" type="checkbox" name="additional-meal" value="vitamins">
-              <label class="form__label" for="vitamins">Витамины</label>
+              <input class="form__input form__input--checkbox visually-hidden" id="vitamins" type="checkbox" name="additional-meal" value="vitamins">
+              <label class="form__label form__label--checkbox" for="vitamins">Витамины</label>
             </li>
           </ul>
         </fieldset>
         <button class="form__button button button--form" type="submit">Отправить заявку</button>
         <span class="form__remark">* — Обязательные поля</span>
-      </form>
-    </div>
+      </div>
+    </form>
     <section class="contacts">
       <h2 class="visually-hidden">Карта с местоположением компании кэт энерджи</h2>
       <picture>
@@ -138,7 +142,7 @@
         <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/location-tablet@1x.png, images/location-tablet@2x.png 2x">
         <img class="contacts-map" src="images/location-mobile@1x.png" srcset="images/location-mobile@2x.png 2x" width="320" height="362" alt="Карта с местоположением компании Cat energy.">
       </picture>
-      <div class="section-container">
+      <div class="section-container section-container--form">
         <div class="contacts-invite">
           <p class="contacts-invite__title">Приглашаем к сотрудничеству дилеров!</p>
           <address class="contacts-invite__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
@@ -147,7 +151,7 @@
     </section>
     <footer class="footer">
       <h2 class="visually-hidden">Социальные сети</h2>
-      <div class="section-container">
+      <div class="section-container section-container--form">
         <a class="footer__link" href="#">
           <span class="visually-hidden">Логотип с надписью Cat energy</span>
           <svg class="footer__logo" width="128" height="24">

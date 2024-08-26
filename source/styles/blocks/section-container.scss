@@ -9,3 +9,9 @@
     padding: 82px 110px 0;
   }
 }
+
+.section-container--form {
+  @media (min-width: $tablet) {
+    padding: 70px 70px 0;
+  }
+}

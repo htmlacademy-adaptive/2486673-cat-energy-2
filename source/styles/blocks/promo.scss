@@ -4,6 +4,11 @@
   padding-bottom: 40px;
   min-width: 280px;
   min-height: 290px;
+
+  @media (min-width: $desktop) {
+    width: 245px;
+    margin-left: 80px;
+  }
 }
 
 .promo__description {
