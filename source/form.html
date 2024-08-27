@@ -92,16 +92,16 @@
       </div>
       <div class="section-container section-container--form">
         <h2 class="form__title">Контактные данные (владельца кота)</h2>
-        <fieldset class="form__cat-data owner-data">
+        <fieldset class="form__cat-data">
           <legend class="visually-hidden">Контактные данные владельца кота</legend>
-          <ul class="form__list">
+          <ul class="form__list form__list--owner">
             <li class="form__item">
-              <label class="form__label">E-mail:*
+              <label class="form__label form__label--mail">E-mail:*
                 <input class="form__input form__input--owner" type="email" name="owner-email" value="kuklachev@gmail.com" required>
               </label>
             </li>
             <li class="form__item">
-              <label class="form__label">Телефон:*
+              <label class="form__label form__label--phone">Телефон:*
                 <input class="form__input form__input--owner" type="tel" name="owner-phone" value="8 (960) 900-60-90" required>
               </label>
             </li>
@@ -109,10 +109,10 @@
         </fieldset>
         <h2 class="form__title">Комментарий</h2>
         <label class="visually-hidden" for="form-comments">Напишите о повадках своего кота</label>
-        <textarea class="form__input form-comments" id="form-comments" name="form-comments">Расскажите обо всех повадках кота</textarea>
-        <fieldset class="form__cat-data additional-data">
+        <textarea class="form__input form__input--comments" id="form-comments" name="form-comments" rows="7">Расскажите обо всех повадках кота</textarea>
+        <fieldset class="form__cat-data form__cat-data--additional">
           <legend class="visually-hidden">Дополнительные пожелания по питанию</legend>
-          <ul class="form__list">
+          <ul class="form__list form__list--additional">
             <li class="form__item">
               <input class="form__input form__input--checkbox visually-hidden" id="sweetener" type="checkbox" name="additional-meal" value="sweetener" checked>
               <label class="form__label form__label--checkbox" for="sweetener">Cахарозаменитель</label>
@@ -131,8 +131,10 @@
             </li>
           </ul>
         </fieldset>
-        <button class="form__button button button--form" type="submit">Отправить заявку</button>
-        <span class="form__remark">* — Обязательные поля</span>
+        <div class="form__wrapper">
+          <button class="form__button button button--form" type="submit">Отправить заявку</button>
+          <span class="form__remark">* — Обязательные поля</span>
+        </div>
       </div>
     </form>
     <section class="contacts">
@@ -143,7 +145,7 @@
         <img class="contacts-map" src="images/location-mobile@1x.png" srcset="images/location-mobile@2x.png 2x" width="320" height="362" alt="Карта с местоположением компании Cat energy.">
       </picture>
       <div class="section-container section-container--form">
-        <div class="contacts-invite">
+        <div class="contacts__invite contacts-invite contacts-invite--main">
           <p class="contacts-invite__title">Приглашаем к сотрудничеству дилеров!</p>
           <address class="contacts-invite__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         </div>
@@ -151,7 +153,7 @@
     </section>
     <footer class="footer">
       <h2 class="visually-hidden">Социальные сети</h2>
-      <div class="section-container section-container--form">
+      <div class="footer__wrapper section-container section-container--form">
         <a class="footer__link" href="#">
           <span class="visually-hidden">Логотип с надписью Cat energy</span>
           <svg class="footer__logo" width="128" height="24">

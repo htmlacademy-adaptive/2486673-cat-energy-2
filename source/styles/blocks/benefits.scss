@@ -28,6 +28,7 @@
   @media (min-width: $tablet) {
     min-height: 280px;
     padding-left: 0;
+    align-items: center;
   }
 }
 
@@ -111,7 +112,7 @@
   }
 }
 
-.benefits__description::after {
+.benefits__wrapper::after {
   @media (min-width: $tablet) {
     counter-increment: item;
     content: counter(item) "";
