@@ -1,5 +1,4 @@
 .hero {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,6 +9,7 @@
 
   @media (min-width: $tablet) {
     padding: 65px 30px 0;
+    align-items: flex-start;
   }
 
   @media (min-width: $desktop) {
@@ -19,27 +19,33 @@
   }
 }
 
-.hero__wrapper {
-  width: 100vw;
-  min-height: 302px;
-  background-color: #64a73c;
-  background-image: url("../../images/hero-background.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-
-  @media (min-width: $tablet) {
-    width: 100%;
-    min-height: auto;
-    padding-left: 90px;
-    background-color: #ffffff;
-    background-image: none;
-    text-align: left;
-    order: -2;
+.hero::after {
+  @media (max-width: $mobile) {
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(rgb(122, 190, 82, 0.8), rgb(122, 190, 82, 0.8)), url("../../images/hero-background.png"), linear-gradient(to right, #535257, #403f44);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100vw;
+    height: 302px;
+    top: 65px;
+    left: 0;
+    z-index: -1;
   }
 
   @media (min-width: $desktop) {
-    padding: 110px 0 0 80px;
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(rgb(122, 190, 82, 0.8), rgb(122, 190, 82, 0.8)), url("../../images/hero-background.png"), linear-gradient(to right, #535257, #403f44);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    width: 100vw;
+    height: 694px;
+    top: 0;
+    left: 50%;
+    z-index: -1;
   }
 }
 
@@ -55,7 +61,12 @@
     line-height: 60px;
     color: #000000;
     padding: 0;
+    padding-left: 90px;
     text-align: left;
+  }
+
+  @media (min-width: $tablet) {
+    padding-left: 80px;
   }
 }
 
@@ -69,26 +80,20 @@
     font-size: 20px;
     line-height: 20px;
     color: #000000;
-    padding: 40px 0 50px;
+    padding: 40px 0 21px 90px;
     text-align: left;
+  }
+
+  @media (min-width: $tablet) {
+    padding-left: 80px;
   }
 }
 
 .hero__image {
-  position: absolute;
-  inset: 0;
-  margin: auto;
-  transform: translateY(20%);
-
-  @media (min-width: $tablet) {
-    position: static;
-    transform: none;
-    order: 3;
-  }
-
   @media (min-width: $desktop) {
     position: absolute;
-    inset: 0 0 0 50%;
+    top: 143px;
+    left: 557px;
   }
 }
 
@@ -96,9 +101,15 @@
   min-width: calc(100vw - 40px);
 
   @media (min-width: $tablet) {
+    position: absolute;
     min-width: 244px;
-    order: -1;
-    align-self: self-start;
+    min-height: 54px;
+    top: 370px;
+    left: 120px;
+  }
+
+  @media (min-width: $desktop) {
+    position: static;
     margin-left: 80px;
   }
 }

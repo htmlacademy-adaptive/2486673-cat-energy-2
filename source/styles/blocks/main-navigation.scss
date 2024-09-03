@@ -2,14 +2,20 @@
   .main-navigation--is-open {
     position: absolute;
     background-color: #ffffff;
-    top: 100%;
+    top: 64px;
     left: 50%;
     transform: translateX(-50%);
     width: 101%;
+    z-index: 1;
+    border-top: 1px solid #e6e6e6;
   }
 
   .main-navigation--is-close {
     display: none;
+  }
+
+  .main-navigation--nojs {
+    position: static;
   }
 }
 
@@ -20,6 +26,10 @@
 
   @media (min-width: $tablet) {
     display: flex;
+  }
+
+  &:hover {
+    opacity: 0.6;
   }
 }
 
