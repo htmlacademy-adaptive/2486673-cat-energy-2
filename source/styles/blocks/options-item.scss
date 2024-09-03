@@ -1,62 +1,161 @@
 .options-item {
   position: relative;
-  background-color: #d9d9d9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 20px 18px;
+  background-color: #f2f2f2;
+  min-height: 266px;
+
+  @media (min-width: $tablet) {
+    padding: 77px 53px 53px;
+    min-height: 372px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 77px 67px 55px 52px;
+    min-width: 570px;
+    min-height: 374px;
+  }
 }
 
 .options-item::before {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 20px;
+  top: 20px;
   background-color: $green;
   border-radius: 50%;
-  min-width: 50px;
-  min-height: 53px;
+  width: 50px;
+  height: 53px;
+
+  @media (min-width: $tablet) {
+    left: unset;
+    right: 63px;
+    top: 92px;
+    width: 200px;
+    height: 211px;
+  }
+
+  @media (min-width: $desktop) {
+    left: 50px;
+    right: unset;
+    top: 40px;
+    width: 100px;
+    height: 100px;
+  }
 }
+
 
 .options-item--slim::after {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 30px;
+  top: 20px;
   background-image: url("../../icons/stack.svg#cat-sit");
   background-repeat: no-repeat;
-  min-width: 36px;
-  min-height: 50px;
+  width: 36px;
+  height: 50px;
+
+  @media (min-width: $tablet) {
+    left: unset;
+    right: 93px;
+    top: 92px;
+    width: 140px;
+    height: 194px;
+  }
+
+  @media (min-width: $desktop) {
+    left: 67px;
+    right: unset;
+    top: 40px;
+    width: 70px;
+    height: 97px;
+  }
 }
 
 .options-item--pro::after {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 10px;
+  top: 30px;
   background-image: url("../../icons/stack.svg#cat-walk");
   background-repeat: no-repeat;
-  min-width: 67px;
-  min-height: 28px;
+  width: 67px;
+  height: 28px;
+
+  @media (min-width: $tablet) {
+    left: unset;
+    right: 29px;
+    top: 135px;
+    width: 268px;
+    height: 112px;
+  }
+
+  @media (min-width: $desktop) {
+    left: 33px;
+    right: unset;
+    top: 67px;
+    width: 134px;
+    height: 56px;
+  }
 }
 
 .options-item__title {
+  margin: 0;
+  padding-left: 90px;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
   color: #000000;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 214px;
+  }
 }
 
 .options-item__description {
-  font-family: $lato-font;
+  position: relative;
+  margin: 0;
+  flex-grow: 1;
+  padding-top: 29px;
+  font-family: $secondary-font;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+
+  @media (min-width: $tablet) {
+    padding: 24px 50% 48px 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 73px 0 23px;
+  }
+}
+
+
+@media (max-width: $mobile) {
+  .options-item__description::after {
+    content: "";
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    width: 100%;
+    border: 1px solid #d9d9d9;
+  }
 }
 
 .options-item__link {
   position: relative;
   display: block;
+  width: 134px;
   font-size: 16px;
   line-height: 16px;
-  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
@@ -70,7 +169,7 @@
   content: "";
   position: absolute;
   right: 0;
-  top: 0;
+  top: 25%;
   mask-image: url("../../icons/stack.svg#arrow-program");
   mask-repeat: no-repeat;
   mask-size: 32px 10px;

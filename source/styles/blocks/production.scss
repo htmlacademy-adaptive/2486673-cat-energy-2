@@ -1,9 +1,21 @@
 .production__list {
+  display: grid;
+  grid-template-rows: auto;
   margin: 0;
+  padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet) {
+    grid-template-columns: auto auto;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: repeat(4, auto);
+  }
 }
 
 .production__title {
+  margin: 27px 0 41px;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;

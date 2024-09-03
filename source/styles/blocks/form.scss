@@ -1,14 +1,17 @@
 .form__cat-data {
+  margin: 0;
+  padding: 0;
   border: none;
 }
 
 .form__list {
   margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .form__item {
-  margin-bottom: 13px;
+  margin-bottom: 25px;
 }
 
 .form__title {
@@ -22,7 +25,8 @@
 
 .form__label {
   position: relative;
-  margin-left: 45px;
+  display: flex;
+  align-items: center;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -30,16 +34,24 @@
 }
 
 .form__input {
-  position: relative;
   font-family: $primary-font;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
+  border: 1px solid #e7e7e7;
+  margin-left: 13px;
+  padding: 14px 15px 13px;
+  min-height: 45px;
+  flex-grow: 1;
 }
 
 //Radio
+.form__cat-data--goal {
+  padding: 20px 20px 20px 45px;
+  border: 1px solid #e7e7e7;
+}
 
 .form__label--radio::before {
   content: "";
@@ -66,11 +78,18 @@
 
 //Owner-data
 
+.form__list--owner {
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .form__label--mail::after {
   content: "";
   position: absolute;
-  bottom: 0;
-  right: -30px;
+  bottom: 10px;
+  right: 0;
   width: 20px;
   height: 20px;
   background-image: url("../../icons/stack.svg#form-mail");
@@ -79,8 +98,8 @@
 .form__label--phone::after {
   content: "";
   position: absolute;
-  bottom: 0;
-  right: -30px;
+  bottom: 10px;
+  right: 0;
   width: 20px;
   height: 20px;
   background-image: url("../../icons/stack.svg#form-phone");
@@ -109,8 +128,43 @@
   height: 14px;
 }
 
+// Comments
+
+.form__input--comments {
+  min-width: 100%;
+}
+
+// Additional
+
+.form__cat-data--additional {
+  padding: 34px 0 34px 45px;
+}
+
+.form__list--additional {
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: auto;
+  }
+}
+
+.form__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+  }
+}
+
 .form__remark {
-  font-family: $lato-font;
+  font-family: $secondary-font;
   font-size: 14px;
   line-height: 16px;
   text-align: center;

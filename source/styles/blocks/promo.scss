@@ -4,11 +4,16 @@
   padding-bottom: 40px;
   min-width: 280px;
   min-height: 290px;
+
+  @media (min-width: $desktop) {
+    width: 245px;
+    margin-left: 80px;
+  }
 }
 
 .promo__description {
   position: relative;
-  font-family: $lato-font;
+  font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
