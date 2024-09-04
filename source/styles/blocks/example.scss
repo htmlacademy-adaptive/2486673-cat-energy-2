@@ -10,16 +10,25 @@
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: repeat(5, auto);
+  border-top: 1px solid #e6e6e6;
 }
 
 .example__title {
   grid-column: 1 / -1;
   margin: 0;
+  margin-top: 5px;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   text-align: center;
   color: #000000;
+
+  @media (min-width: $tablet) {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    margin-top: 15px;
+  }
 
   @media (min-width: $desktop) {
     grid-column: 1 / 2;
@@ -32,6 +41,13 @@
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+  margin: 0;
+  margin-top: 40px;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 
   @media (min-width: $desktop) {
     grid-column: 1 / 2;
@@ -43,6 +59,7 @@
   display: flex;
   justify-content: space-around;
   margin: 0;
+  margin-top: 20px;
   padding: 0;
   list-style: none;
 
@@ -58,9 +75,13 @@
 .example__price {
   grid-column: 1 / -1;
   text-align: center;
+  margin: 0;
+  margin-top: 20px;
 
   @media (min-width: $tablet) {
     grid-column: 2 / 3;
+    font-size: 20px;
+    line-height: 20px;
   }
 
   @media (min-width: $desktop) {

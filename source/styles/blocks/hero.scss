@@ -13,6 +13,7 @@
   }
 
   @media (min-width: $desktop) {
+    justify-content: flex-start;
     padding: 0;
     padding-left: 110px;
     min-height: 580px;
@@ -40,8 +41,8 @@
     background-image: linear-gradient(rgb(122, 190, 82, 0.8), rgb(122, 190, 82, 0.8)), url("../../images/hero-background.png"), linear-gradient(to right, #535257, #403f44);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: left;
-    width: 100vw;
+    background-position: left bottom;
+    width: 50%;
     height: 694px;
     top: 0;
     left: 50%;
@@ -65,8 +66,8 @@
     text-align: left;
   }
 
-  @media (min-width: $tablet) {
-    padding-left: 80px;
+  @media (min-width: $desktop) {
+    padding: 110px 0 40px 80px;
   }
 }
 
@@ -84,8 +85,8 @@
     text-align: left;
   }
 
-  @media (min-width: $tablet) {
-    padding-left: 80px;
+  @media (min-width: $desktop) {
+    padding: 0 0 52px 80px;
   }
 }
 

@@ -6,9 +6,14 @@
   padding: 40px 0;
   list-style: none;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet) and (max-width: $desktop) {
     grid-template-columns: auto auto;
     gap: 37px 150px;
+    padding: 72px 0 47px;
+
+    :nth-child(2n) {
+      justify-self: end;
+    }
   }
 
   @media (min-width: $desktop) {
@@ -25,7 +30,7 @@
   min-height: 60px;
 
   @media (min-width: $tablet) {
-    min-height: 280px;
+    min-height: 240px;
     padding-left: 0;
     align-items: center;
   }
@@ -33,8 +38,8 @@
   &::before {
     content: "";
     position: absolute;
-    top: 10px;
-    left: 15px;
+    top: 0;
+    left: 0;
     background-repeat: no-repeat;
     background-color: $green;
     background-size: 30px 32px;
@@ -48,15 +53,15 @@
       counter-increment: item;
       content: counter(item) "";
       position: absolute;
-      top: -50px;
-      right: 140px;
+      top: 0;
+      left: 118px;
       width: 134px;
-      height: 280px;
+      height: 240px;
       font-family: $primary-font;
       font-style: normal;
       font-weight: 400;
       font-size: 280px;
-      line-height: 280px;
+      line-height: 200px;
       color: #f2f2f2;
       z-index: -1;
     }
@@ -87,6 +92,11 @@
   line-height: 40px;
   text-align: left;
   color: #000000;
+
+  @media (min-width: $tablet) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .benefits__description {
@@ -97,7 +107,10 @@
   margin: auto 0;
 
   @media (min-width: $tablet) {
-    padding-right: 110px;
+    font-size: 16px;
+    line-height: 24px;
+    padding-right: 26px;
+    max-width: 280px;
   }
 
   @media (min-width: $desktop) {

@@ -3,6 +3,19 @@
   line-height: 24px;
   text-align: center;
   color: #000000;
+  margin: 0;
+  padding: 14px;
+  min-width: 124px;
+  min-height: 56px;
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
+
+  @media (min-width: $tablet) {
+    font-size: 30px;
+    line-height: 37px;
+    min-width: 162px;
+    min-height: 77px;
+  }
 }
 
 .example-item__description {
@@ -10,5 +23,20 @@
   font-size: 12px;
   line-height: 100%;
   text-align: center;
+  text-transform: lowercase;
   color: #444444;
+  margin: 0 auto;
+  margin-top: -10px;
+  width: 77px;
+  height: 24px;
+  background-color: #eaeaea;
+
+  @media (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 14px;
+    width: fit-content;
+    height: 24px;
+    background-color: #ffffff;
+    padding: 0 10px;
+  }
 }
