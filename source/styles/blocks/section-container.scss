@@ -10,8 +10,32 @@
   }
 }
 
+.section-container--contacts {
+  padding: 25px 20px;
+
+  @media (min-width: $tablet) {
+    padding: 60px 70px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0;
+  }
+}
+
 .section-container--form {
   @media (min-width: $tablet) {
     padding: 70px 70px 0;
+  }
+}
+
+.section-container--footer {
+  padding: 40px 20px;
+
+  @media (min-width: $tablet) {
+    padding: 55px 30px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 66px 110px;
   }
 }

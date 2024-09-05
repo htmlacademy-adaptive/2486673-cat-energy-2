@@ -47,6 +47,8 @@
   @media (min-width: $tablet) {
     font-size: 16px;
     line-height: 24px;
+    margin-top: 60px;
+    max-width: 720px;
   }
 
   @media (min-width: $desktop) {
@@ -65,31 +67,44 @@
 
   @media (min-width: $tablet) {
     grid-column: 1 / 2;
+    margin-top: 55px;
   }
 
   @media (min-width: $desktop) {
     grid-column: 1 / 2;
+    justify-content: left;
+    gap: 42px;
   }
 }
 
 .example__price {
   grid-column: 1 / -1;
+  display: flex;
+  justify-self: center;
   text-align: center;
   margin: 0;
   margin-top: 20px;
 
   @media (min-width: $tablet) {
     grid-column: 2 / 3;
+    flex-direction: column;
+    justify-self: end;
+    text-align: right;
+    gap: 9px;
     font-size: 20px;
     line-height: 20px;
+    margin-top: 66px;
   }
 
   @media (min-width: $desktop) {
     grid-column: 1 / 2;
+    flex-direction: row;
+    justify-self: left;
+    gap: 63px;
   }
 }
 
-.example-slider {
+.example__slider {
   grid-column: 1 / -1;
 
   @media (min-width: $desktop) {

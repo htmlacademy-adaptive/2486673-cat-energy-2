@@ -28,6 +28,9 @@
 }
 
 .footer__copyright {
-  display: flex;
-  justify-content: space-between;
+  width: 100%;
+
+  @media (min-width: $tablet) {
+    width: 168px;
+  }
 }

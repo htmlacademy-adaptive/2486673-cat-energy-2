@@ -1,5 +1,6 @@
 .contacts-invite {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   background-color: #f2f2f2;
 }
@@ -13,9 +14,17 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
+  margin: 0;
+  max-width: 180px;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .contacts-invite__adress {
+  max-width: 160px;
   font-family: $secondary-font;
   font-style: normal;
   font-size: 14px;
