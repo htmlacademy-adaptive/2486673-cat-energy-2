@@ -15,10 +15,12 @@
 }
 
 .production__title {
-  margin: 27px 0 41px;
+  margin: 0;
+  padding: 27px 42px 41px 20px;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   color: #000000;
+  border-bottom: 1px solid #ebebeb;
 }

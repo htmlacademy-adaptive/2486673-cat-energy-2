@@ -5,18 +5,6 @@
   justify-content: space-between;
   padding: 20px 20px 18px;
   background-color: #f2f2f2;
-  min-height: 266px;
-
-  @media (min-width: $tablet) {
-    padding: 77px 53px 53px;
-    min-height: 372px;
-  }
-
-  @media (min-width: $desktop) {
-    padding: 77px 67px 55px 52px;
-    width: calc(50% - 40px);
-    min-height: 374px;
-  }
 }
 
 .options-item::before {
@@ -45,7 +33,6 @@
     height: 100px;
   }
 }
-
 
 .options-item--slim::after {
   content: "";
@@ -162,6 +149,8 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+  padding: 10px;
+  padding-bottom: 0;
 
   @media (min-width: $tablet) {
     font-size: 20px;
@@ -177,7 +166,7 @@
   content: "";
   position: absolute;
   left: 113px;
-  top: 25%;
+  bottom: 4px;
   mask-image: url("../../icons/stack.svg#arrow-program");
   mask-repeat: no-repeat;
   mask-size: 32px 10px;
@@ -188,6 +177,7 @@
 
   @media (min-width: $tablet) {
     left: 130px;
+    bottom: 10px;
   }
 }
 
