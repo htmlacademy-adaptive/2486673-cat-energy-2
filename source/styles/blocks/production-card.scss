@@ -2,12 +2,16 @@
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto min-content;
-  min-height: 209px;
+
+  &--more {
+    grid-template-columns: auto;
+    grid-template-rows: auto min-content min-content;
+  }
 
   @media (min-width: $tablet) {
-    min-width: 324px;
-    min-height: 511px;
-    grid-template-rows: auto auto min-content;
+    grid-template-rows: auto min-content min-content;
+    background: linear-gradient(to top, #f2f2f2 430px, #ffffff 430px);
+    justify-content: center;
   }
 }
 
@@ -18,6 +22,16 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #222222;
+
+  &--more {
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .production-card__term,
@@ -27,6 +41,13 @@
   line-height: 16px;
   text-align: center;
   color: #444444;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #cdcdcd;
+  }
 }
 
 .production-card__image-link {
@@ -43,13 +64,18 @@
 .production-card__content {
   display: grid;
   grid-template-columns: 76px 64px;
-  grid-template-rows: auto auto;
+  grid-template-rows: min-content min-content;
   justify-content: space-around;
   grid-column: 2 / 3;
+  row-gap: 14px;
   padding: 20px 0;
 
   @media (min-width: $tablet) {
     grid-column: 1 / -1;
+    row-gap: 20px;
+    padding: 22px 0 32px;
+    justify-content: space-between;
+    height: fit-content;
   }
 }
 
@@ -58,6 +84,8 @@
   flex-direction: column;
   justify-content: space-between;
   grid-column: 1 / -1;
+  padding: 0;
+  padding-bottom: 21px;
 }
 
 .production-card__link {
@@ -66,18 +94,27 @@
   margin: 0;
   text-decoration: none;
   text-align: left;
+
+  @media (min-width: $tablet) {
+    grid-column: 1 / -1;
+    text-align: center;
+    width: 127px;
+    justify-self: center;
+  }
 }
 
 .production-card__link--more {
   grid-column: 1 / -1;
+  min-height: 78px;
 }
 
 .production-card__link--more::after {
   content: "";
   position: relative;
   display: block;
-  top: 10;
+  top: 25px;
   left: 50%;
+  transform: translateX(-50%);
   background-image: url("../../icons/stack.svg#card-more");
   background-size: 30px;
   width: 30px;
@@ -90,10 +127,19 @@
   display: grid;
   grid-template-columns: auto auto;
   margin: 0;
+
+  @media (min-width: $tablet) {
+    row-gap: 5px;
+  }
 }
 
 .production-card__term {
   text-align: left;
+
+  &--more {
+    text-align: center;
+    margin: 0;
+  }
 }
 
 .production-card__description {
@@ -104,9 +150,5 @@
 .production-card__button {
   display: block;
   grid-column: 1 / -1;
-  min-width: 250px;
-
-  @media (min-width: $tablet) {
-    place-self: center center;
-  }
+  min-width: 100%;
 }
