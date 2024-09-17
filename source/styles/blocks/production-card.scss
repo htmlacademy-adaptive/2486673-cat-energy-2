@@ -3,15 +3,19 @@
   grid-template-columns: auto auto;
   grid-template-rows: auto min-content;
 
-  &--more {
-    grid-template-columns: auto;
-    grid-template-rows: auto min-content min-content;
-  }
-
   @media (min-width: $tablet) {
     grid-template-rows: auto min-content min-content;
     background: linear-gradient(to top, #f2f2f2 430px, #ffffff 430px);
     justify-content: center;
+  }
+}
+
+.production-card--more {
+  grid-template-columns: auto;
+  grid-template-rows: auto min-content min-content;
+
+  @media (min-width: $tablet) {
+    background: none;
   }
 }
 
@@ -23,14 +27,18 @@
   text-transform: uppercase;
   color: #222222;
 
-  &--more {
-    text-align: center;
-    margin-bottom: 8px;
-  }
-
   @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 24px;
+  }
+}
+
+.production-card__title--more {
+  text-align: center;
+  margin-bottom: 8px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 23px;
   }
 }
 
@@ -86,6 +94,11 @@
   grid-column: 1 / -1;
   padding: 0;
   padding-bottom: 21px;
+
+  @media (min-width: $tablet) {
+    align-items: center;
+    padding-bottom: 82px;
+  }
 }
 
 .production-card__link {
@@ -104,21 +117,37 @@
 }
 
 .production-card__link--more {
-  grid-column: 1 / -1;
-  min-height: 78px;
+  @media (min-width: $tablet) {
+    width: 170px;
+  }
 }
 
-.production-card__link--more::after {
-  content: "";
-  position: relative;
-  display: block;
-  top: 25px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-image: url("../../icons/stack.svg#card-more");
-  background-size: 30px;
-  width: 30px;
-  height: 30px;
+.production-card__image-link--more {
+  min-height: 100%;
+  min-width: 100%;
+
+  &::after,
+  &::before {
+    content: "";
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 2px;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #d3d3d3;
+
+    @media (min-width: $tablet) {
+      top: 135px;
+      width: 60px;
+      height: 2px;
+    }
+  }
+}
+
+.production-card__image-link--more::after {
+  transform: translateX(-50%) rotate(90deg);
 }
 
 .production-card__list {
@@ -139,6 +168,7 @@
   &--more {
     text-align: center;
     margin: 0;
+    border: none;
   }
 }
 
@@ -151,4 +181,8 @@
   display: block;
   grid-column: 1 / -1;
   min-width: 100%;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 40px;
+  }
 }

@@ -16,4 +16,3 @@ navToggle.addEventListener('click', () => {
     navToggle.classList.remove ('main-header__toggle--close');
   }
 });
-

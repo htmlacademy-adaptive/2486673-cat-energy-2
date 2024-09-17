@@ -1,6 +1,11 @@
 .additional__wrapper {
   display: flex;
   flex-direction: column;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 6px;
+  }
 
   @media (min-width: $desktop) {
     flex-direction: row;
@@ -8,33 +13,54 @@
   }
 }
 
+.additional__item {
+  border-bottom: 1px solid #cdcdcd;
+  min-height: 130px;
+
+  &:first-child {
+    border-top: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: $tablet) {
+    border: 1px solid #cdcdcd;
+    border-bottom: none;
+    min-height: 140px;
+
+    &:last-child {
+      border-bottom: 1px solid #cdcdcd;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    min-width: 894px;
+    min-height: 72px;
+  }
+}
+
 .additional__list {
   display: flex;
   flex-direction: column;
   margin: 0;
+  margin-bottom: 35px;
   padding: 0;
   list-style: none;
-}
-
-.additional__title {
-  border-bottom: 1px solid #cdcdcd;
 
   @media (min-width: $tablet) {
-    margin-left: 30px;
-    border: none;
+    margin-bottom: 70px;
   }
+}
+
+.additional__promo {
+  min-width: 280px;
+  min-height: 290px;
+  padding: 187px 61px 43px 58px;
+  background-image: linear-gradient(rgb(122, 190, 82, 0.8), rgb(122, 190, 82, 0.8)), url("../../images/promo-cat.png"), linear-gradient(to right, #a3a3a3, #393939);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
   @media (min-width: $desktop) {
-    margin-left: 110px;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 34px;
-    height: 2px;
-    background-color: $green;
-    top: 20px;
-    right: 0;
+    width: 245px;
+    margin-left: 80px;
   }
 }

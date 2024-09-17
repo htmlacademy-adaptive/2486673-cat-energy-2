@@ -38,6 +38,10 @@
   padding: 10px 95px;
   color: #444444;
   background-color: #f2f2f2;
+
+  @media (min-width: $tablet) {
+    padding: 10px 80px;
+  }
 }
 
 .button--submit {

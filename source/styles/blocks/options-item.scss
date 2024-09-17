@@ -117,11 +117,13 @@
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+  border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet) {
     padding: 24px 50% 48px 0;
     font-size: 16px;
     line-height: 24px;
+    border: none;
   }
 
   @media (min-width: $desktop) {
@@ -129,16 +131,16 @@
   }
 }
 
-@media (max-width: $mobile) {
-  .options-item__description::after {
-    content: "";
-    position: absolute;
-    bottom: 15px;
-    left: 0;
-    width: 100%;
-    border: 1px solid #d9d9d9;
-  }
-}
+// @media (max-width: $mobile) {
+//   .options-item__description::after {
+//     content: "";
+//     position: absolute;
+//     bottom: 15px;
+//     left: 0;
+//     width: 100%;
+//     border: 1px solid #d9d9d9;
+//   }
+// }
 
 .options-item__link {
   position: relative;
