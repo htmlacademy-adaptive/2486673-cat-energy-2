@@ -12,6 +12,7 @@
 
   @media (min-width: $desktop) {
     grid-template-columns: repeat(4, auto);
+    gap: 80px;
   }
 }
 
@@ -23,6 +24,12 @@
   @media (min-width: $tablet) {
     padding: 0 37px;
     min-width: 324px;
+    min-height: 511px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 38px;
+    min-width: 245px;
     min-height: 511px;
   }
 
@@ -54,5 +61,9 @@
     font-size: 60px;
     line-height: 60px;
     border-bottom: none;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 74px 0 84px;
   }
 }

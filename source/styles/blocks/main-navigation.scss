@@ -27,6 +27,12 @@
   @media (min-width: $tablet) {
     display: flex;
   }
+
+  &--white {
+    @media (min-width: $desktop) {
+      color: #ffffff;
+    }
+  }
 }
 
 .main-navigation__item {
@@ -47,7 +53,7 @@
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #000000;
+  color: inherit;
   padding: 15px;
 
   @media (min-width: $tablet) {
@@ -58,7 +64,6 @@
   @media (min-width: $desktop) {
     font-size: 20px;
     line-height: 30px;
-    color: #ffffff;
   }
 
   &:hover {
@@ -76,7 +81,9 @@
     height: 2px;
     background-color: $green;
   }
+}
 
+.main-navigation__list--white .main-navigation__link--current::after {
   @media (min-width: $desktop) {
     background-color: #ffffff;
   }

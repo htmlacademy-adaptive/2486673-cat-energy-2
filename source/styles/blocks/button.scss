@@ -32,6 +32,14 @@
 
 .button--order {
   padding: 10px 109px;
+
+  @media (min-width: $tablet) {
+    padding: 10px 94px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 10px 40px;
+  }
 }
 
 .button--more {
@@ -41,6 +49,10 @@
 
   @media (min-width: $tablet) {
     padding: 10px 80px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 10px 30px;
   }
 }
 
