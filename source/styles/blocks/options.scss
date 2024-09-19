@@ -9,12 +9,14 @@
 
   @media (min-width: $tablet) {
     gap: 30px;
+    margin: 0;
   }
 
   @media (min-width: $desktop) {
     flex-direction: row;
     justify-content: space-between;
     gap: 80px;
+    padding-top: 82px;
   }
 }
 
