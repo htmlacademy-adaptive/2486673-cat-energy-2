@@ -33,13 +33,12 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  text-align: center;
+  text-align: left;
   color: #000000;
 
   @media (min-width: $tablet) {
     font-size: 60px;
     line-height: 60px;
-    text-align: left;
     margin-top: 45px;
   }
 
@@ -75,7 +74,7 @@
 .example__list {
   grid-column: 1 / -1;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 0;
   margin-top: 20px;
   padding: 0;
@@ -99,6 +98,9 @@
   display: flex;
   justify-self: center;
   text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
   margin: 0;
   margin-top: 20px;
 
@@ -124,8 +126,10 @@
 
 .example__slider {
   grid-column: 1 / -1;
+  margin-bottom: 55px;
 
   @media (min-width: $desktop) {
+    margin: 0;
     grid-column: 2 / 3;
     grid-row: 1 / -1;
   }

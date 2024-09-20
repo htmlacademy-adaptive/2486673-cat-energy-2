@@ -11,8 +11,9 @@
   }
 
   @media (min-width: $desktop) {
-    grid-template-columns: auto auto min-content;
+    grid-template-columns: 326px auto min-content;
     grid-template-rows: auto;
+    padding: 0;
   }
 }
 
@@ -60,6 +61,10 @@
 
   @media (min-width: $desktop) {
     grid-column: 2 / 3;
+    justify-content: space-between;
+    margin: 0;
+    margin-right: 40px;
+    gap: 0;
   }
 }
 

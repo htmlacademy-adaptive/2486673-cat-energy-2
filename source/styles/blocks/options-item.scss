@@ -2,12 +2,13 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 20px 20px 18px;
+  justify-content: start;
+  padding: 30px 20px 18px;
   background-color: #f2f2f2;
 
   @media (min-width: $tablet) {
     padding: 77px 0 52px 52px;
+    justify-content: space-between;
   }
 }
 
@@ -15,7 +16,7 @@
   content: "";
   position: absolute;
   left: 20px;
-  top: 20px;
+  top: 22px;
   background-color: $green;
   border-radius: 50%;
   width: 50px;
@@ -41,7 +42,7 @@
 .options-item--slim::after {
   content: "";
   position: absolute;
-  left: 30px;
+  left: 26px;
   top: 20px;
   background-image: url("../../icons/stack.svg#cat-sit");
   background-repeat: no-repeat;
@@ -68,8 +69,8 @@
 .options-item--pro::after {
   content: "";
   position: absolute;
-  left: 10px;
-  top: 30px;
+  left: 12px;
+  top: 35px;
   background-image: url("../../icons/stack.svg#cat-walk");
   background-repeat: no-repeat;
   width: 67px;
@@ -94,7 +95,8 @@
 
 .options-item__title {
   margin: 0;
-  padding-left: 90px;
+  margin-bottom: 29px;
+  padding-left: 70px;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
@@ -102,6 +104,7 @@
   color: #000000;
 
   @media (min-width: $tablet) {
+    margin: 0;
     padding: 0;
     font-size: 36px;
     line-height: 36px;
@@ -115,8 +118,7 @@
 .options-item__description {
   position: relative;
   margin: 0;
-  flex-grow: 1;
-  padding-top: 29px;
+  padding-bottom: 23px;
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 18px;
@@ -144,7 +146,7 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
-  padding: 10px 10px 0 0;
+  padding: 18px 10px 0 0;
 
   @media (min-width: $tablet) {
     font-size: 20px;
@@ -156,11 +158,15 @@
   }
 }
 
-.options-item__link::after {
+.options-item__text {
+  position: relative;
+}
+
+.options-item__text::after {
   content: "";
   position: absolute;
-  left: 113px;
-  bottom: 4px;
+  right: -50px;
+  bottom: 7px;
   mask-image: url("../../icons/stack.svg#arrow-program");
   mask-repeat: no-repeat;
   mask-size: 32px 10px;
@@ -168,13 +174,9 @@
   background-color: #000000;
   width: 32px;
   height: 10px;
-
-  @media (min-width: $tablet) {
-    left: 130px;
-    bottom: 10px;
-  }
 }
 
-.options-item__link:hover::after {
+
+.options-item__text:hover::after {
   mask-position: -3px;
 }

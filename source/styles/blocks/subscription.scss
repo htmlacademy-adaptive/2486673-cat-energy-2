@@ -4,6 +4,12 @@
   @media (min-width: $tablet) {
     margin-bottom: 80px;
   }
+
+  @media (min-width: $desktop) {
+    max-width: 1220px;
+    margin: 0 auto;
+    margin-bottom: 104px;
+  }
 }
 
 .subscription__description {
@@ -21,7 +27,8 @@
   }
 
   @media (min-width: $desktop) {
-    margin-left: 110px;
+    padding: 0;
+    padding-bottom: 24px;
   }
 }
 

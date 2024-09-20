@@ -21,6 +21,9 @@
   width: 28px;
   height: 22px;
   background-color: #666666;
+  mask-size: 27px 17px;
+  mask-repeat: no-repeat;
+  mask-position: center;
 
   &:hover,
   &:focus {
@@ -31,22 +34,16 @@
     background-color: $green;
     opacity: 0.3;
   }
-}
 
-.social-list__link--vkontakte {
-  mask-image: url("../../icons/stack.svg#vkontakte");
-  mask-size: 27px 17px;
-  mask-repeat: no-repeat;
-}
+  &--vkontakte {
+    mask-image: url("../../icons/stack.svg#vkontakte");
+  }
 
-.social-list__link--youtube {
-  mask-image: url("../../icons/stack.svg#youtube");
-  mask-size: 27px 17px;
-  mask-repeat: no-repeat;
-}
+  &--youtube {
+    mask-image: url("../../icons/stack.svg#youtube");
+  }
 
-.social-list__link--telegram {
-  mask-image: url("../../icons/stack.svg#telegram");
-  mask-size: 27px 17px;
-  mask-repeat: no-repeat;
+  &--telegram {
+    mask-image: url("../../icons/stack.svg#telegram");
+  }
 }

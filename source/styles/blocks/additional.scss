@@ -10,6 +10,8 @@
   @media (min-width: $desktop) {
     flex-direction: row;
     justify-content: space-between;
+    max-width: 1220px;
+    margin: 0 auto;
   }
 }
 
@@ -34,6 +36,8 @@
   @media (min-width: $desktop) {
     min-width: 894px;
     min-height: 72px;
+    border: none;
+    border-bottom: 1px solid #cdcdcd;
   }
 }
 
@@ -60,7 +64,10 @@
   background-position: center;
 
   @media (min-width: $desktop) {
+    min-width: unset;
+    min-height: unset;
     width: 245px;
+    height: 288px;
     margin-left: 80px;
   }
 }
