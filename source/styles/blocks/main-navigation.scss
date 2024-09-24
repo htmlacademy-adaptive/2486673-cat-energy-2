@@ -1,13 +1,16 @@
 @media (max-width: $mobile) {
-  .main-navigation--is-open {
-    position: absolute;
+  .main-navigation {
     background-color: #ffffff;
-    top: 65px;
+    top: 64px;
     left: 50%;
     transform: translateX(-50%);
     width: 101%;
     z-index: 1;
     border-top: 1px solid #e6e6e6;
+  }
+
+  .main-navigation--is-open {
+    position: absolute;
   }
 
   .main-navigation--is-close {
@@ -16,6 +19,8 @@
 
   .main-navigation--nojs {
     position: static;
+    transform: none;
+    display: block;
   }
 }
 

@@ -19,7 +19,7 @@
 .main-header__wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 13px 20px 14px;
+  padding: 13px 15px 14px 20px;
   width: 100%;
 
   @media (min-width: $tablet) {
@@ -53,17 +53,12 @@
   &:active {
     opacity: 0.6;
   }
-
-  &--mr {
-    margin-right: 10px;
-  }
 }
 
 .main-header__toggle {
   display: block;
   margin: 0;
-  padding: 12px;
-  padding-right: 0;
+  padding: 0 19px;
   border: none;
   background-image: url("../../icons/stack.svg#menu-close");
   background-repeat: no-repeat;
@@ -77,6 +72,11 @@
   &--open {
     background-image: url("../../icons/stack.svg#menu-open");
     background-size: 24px;
+  }
+
+  &--nojs {
+    cursor: none;
+    background-image: none;
   }
 }
 

@@ -32,6 +32,18 @@
 }
 
 .contacts__map {
-  display: none;
+  display: block;
+  position: absolute;
+  object-fit: cover;
+  top: 112px;
   width: 100vw;
+
+  @media (min-width: $tablet) {
+    top: 203px;
+  }
+
+  @media (min-width: $desktop) {
+    top: 0;
+    z-index: -1;
+  }
 }

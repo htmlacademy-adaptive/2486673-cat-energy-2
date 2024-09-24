@@ -2,6 +2,7 @@ const navMain = document.querySelector('.main-navigation');
 const navToggle = document.querySelector('.main-header__toggle');
 
 navMain.classList.remove('main-navigation--nojs');
+navToggle.classList.remove('main-header__toggle--nojs');
 
 navToggle.addEventListener('click', () => {
   if (navMain.classList.contains('main-navigation--is-close')) {

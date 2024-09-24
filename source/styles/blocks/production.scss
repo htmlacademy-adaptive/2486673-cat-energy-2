@@ -8,6 +8,7 @@
   @media (min-width: $tablet) {
     grid-template-columns: auto auto;
     gap: 60px;
+    justify-content: center;
   }
 
   @media (min-width: $desktop) {
@@ -23,13 +24,13 @@
 
   @media (min-width: $tablet) {
     padding: 0 37px;
-    min-width: 324px;
+    width: 324px;
     min-height: 511px;
   }
 
   @media (min-width: $desktop) {
     padding: 0 38px;
-    min-width: 245px;
+    width: 245px;
     min-height: 511px;
   }
 
