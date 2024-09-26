@@ -17,7 +17,7 @@
     left: 0;
     min-height: 199px;
     min-width: 565px;
-    padding: 60px 80px;
+    padding: 60px 75px 60px 80px;
   }
 }
 
@@ -39,7 +39,7 @@
   width: 100vw;
 
   @media (min-width: $tablet) {
-    top: 203px;
+    top: 200px;
   }
 
   @media (min-width: $desktop) {

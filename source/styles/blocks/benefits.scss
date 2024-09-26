@@ -8,8 +8,8 @@
 
   @media (min-width: $tablet) {
     grid-template-columns: auto auto;
-    gap: 37px 150px;
-    padding: 72px 0 47px;
+    gap: 79px 125px;
+    padding: 72px 79px 47px 0;
 
     :nth-child(2n) {
       justify-self: end;
@@ -17,10 +17,11 @@
   }
 
   @media (min-width: $desktop) {
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: 250px 252px 250px 245px;
     grid-template-rows: auto;
-    column-gap: 70px;
-    padding-bottom: 0;
+    gap: 0;
+    padding: 72px 0 0;
+    justify-content: space-between;
   }
 }
 
@@ -43,10 +44,15 @@
     left: 0;
     background-repeat: no-repeat;
     background-color: $green;
-    background-size: 30px 32px;
+    background-size: 32px 32px;
     background-position: center;
     width: 60px;
     height: 60px;
+
+    @media (min-width: $tablet) {
+      width: 80px;
+      height: 80px;
+    }
   }
 
   &::after {
@@ -98,7 +104,7 @@
   @media (min-width: $tablet) {
     font-size: 60px;
     line-height: 60px;
-    margin-top: 45px;
+    margin-top: 47px;
   }
 
   @media (min-width: $desktop) {
@@ -116,7 +122,9 @@
   @media (min-width: $tablet) {
     font-size: 16px;
     line-height: 24px;
-    padding-right: 26px;
+    align-self: end;
+    margin: 0;
+    margin-bottom: 58px;
     max-width: 280px;
   }
 

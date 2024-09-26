@@ -80,6 +80,7 @@
     font-size: 20px;
     line-height: 20px;
     color: #000000;
+    margin: 0;
     padding: 40px 0 21px 90px;
     text-align: left;
   }
@@ -96,7 +97,7 @@
     position: absolute;
     top: 143px;
     left: 50%;
-    transform: translateX(-40%);
+    transform: translateX(-30%);
   }
 }
 
@@ -107,7 +108,7 @@
     position: absolute;
     min-width: 244px;
     min-height: 54px;
-    top: 370px;
+    top: 295px;
     left: 120px;
   }
 
