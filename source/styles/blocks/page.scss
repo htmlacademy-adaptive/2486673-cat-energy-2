@@ -1,9 +1,7 @@
 .page__wrapper {
-  max-width: 1220px;
-  margin: 0 auto;
-
-  &--relative {
-    position: relative;
+  @media (min-width: $desktop) {
+    margin: 0 auto;
+    max-width: 1220px;
   }
 }
 

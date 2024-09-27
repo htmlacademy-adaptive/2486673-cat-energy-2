@@ -1,10 +1,6 @@
 .title-wrapper {
   position: relative;
-  padding: 25px 0 36px 20px;
-
-  @media (min-width: $tablet) {
-    padding: 74px 0 80px 40px;
-  }
+  padding: 25px 0 33px 20px;
 
   &::after {
     content: "";
@@ -12,12 +8,24 @@
     width: 100vw;
     height: 2px;
     background-color: $green;
-    top: 40px;
+    top: 34px;
     right: 0;
     z-index: -1;
+  }
 
-    @media (min-width: $tablet) {
-      top: 90px;
+  @media (min-width: $tablet) {
+    padding: 74px 0 80px 40px;
+
+    &::after {
+      top: 87px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 77px;
+
+    &::after {
+      box-shadow: 100vw 0 0 0 $green;
     }
   }
 }
@@ -27,6 +35,10 @@
 
   @media (min-width: $tablet) {
     padding-bottom: 66px;
+  }
+
+  @media (min-width: $tablet) {
+    padding-bottom: 70px;
   }
 }
 
@@ -49,6 +61,8 @@
   }
 
   @media (min-width: $desktop) {
-    margin-left: 110px;
+    margin-left: 70px;
+    font-size: 40px;
+    line-height: 40px;
   }
 }

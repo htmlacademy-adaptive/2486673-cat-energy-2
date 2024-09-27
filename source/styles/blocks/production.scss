@@ -1,3 +1,10 @@
+.production__wrapper {
+  @media (min-width: $desktop) {
+    margin: 0 auto;
+    max-width: 1220px;
+  }
+}
+
 .production__list {
   display: grid;
   grid-template-rows: auto;
@@ -13,7 +20,7 @@
 
   @media (min-width: $desktop) {
     grid-template-columns: repeat(4, auto);
-    gap: 80px;
+    gap: 63px 80px;
   }
 }
 
@@ -49,7 +56,7 @@
 
 .production__title {
   margin: 0;
-  padding: 27px 0 41px 20px;
+  padding: 27px 0 41px;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -58,7 +65,7 @@
   border-bottom: 1px solid #ebebeb;
 
   @media (min-width: $tablet) {
-    padding: 65px 0 84px 30px;
+    padding: 65px 0 84px;
     font-size: 60px;
     line-height: 60px;
     border-bottom: none;

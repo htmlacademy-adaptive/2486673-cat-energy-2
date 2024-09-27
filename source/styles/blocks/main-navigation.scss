@@ -88,15 +88,14 @@
     content: "";
     position: absolute;
     bottom: 1px;
-    left: 20px;
-    right: 13px;
-    height: 2px;
+    left: 22px;
+    right: 11px;
+    height: 3px;
     background-color: $green;
   }
 
   @media (min-width: $desktop) {
     bottom: 3px;
-    left: 27px;
   }
 }
 

@@ -11,7 +11,14 @@
     flex-direction: row;
     justify-content: space-between;
     max-width: 1220px;
+    margin: 0 auto 25px;
+  }
+}
+
+.additional__title-wrapper {
+  @media (min-width: $desktop) {
     margin: 0 auto;
+    max-width: 1220px;
   }
 }
 
@@ -26,7 +33,7 @@
   @media (min-width: $tablet) {
     border: 1px solid #cdcdcd;
     border-bottom: none;
-    min-height: 140px;
+    min-height: 139px;
 
     &:last-child {
       border-bottom: 1px solid #cdcdcd;
@@ -50,14 +57,16 @@
   list-style: none;
 
   @media (min-width: $tablet) {
-    margin-bottom: 70px;
+    margin-bottom: 0;
   }
 }
 
 .additional__promo {
+  display: flex;
+  justify-content: center;
+  align-items: end;
   min-width: 280px;
   min-height: 290px;
-  padding: 187px 61px 43px 58px;
   background-image: linear-gradient(rgb(122, 190, 82, 0.8), rgb(122, 190, 82, 0.8)), url("../../images/gift-mobile@1x.png"), linear-gradient(to right, #a3a3a3, #393939);
   background-repeat: no-repeat;
   background-size: cover;
@@ -68,6 +77,9 @@
   }
 
   @media (min-width: $tablet) {
+    align-items: center;
+    justify-content: end;
+    min-height: 200px;
     background-image: linear-gradient(rgb(122, 190, 82, 0.8), rgb(122, 190, 82, 0.8)), url("../../images/gift-tablet@1x.png"), linear-gradient(to right, #a3a3a3, #393939);
 
     @media (min-resolution: 2dppx) {
@@ -76,6 +88,8 @@
   }
 
   @media (min-width: $desktop) {
+    align-items: end;
+    justify-content: center;
     min-width: unset;
     min-height: unset;
     width: 245px;

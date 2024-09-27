@@ -19,15 +19,16 @@
 
 .additional-card__link {
   text-decoration: none;
-  padding: 13px 0;
+  padding: 13px 0 6px;
 
 
   @media (min-width: $tablet) {
-    padding: 25px 0;
+    padding: 22px 0;
   }
 
   @media (min-width: $desktop) {
     grid-column: 1 / 2;
+    padding: 20px 0 27px;
   }
 }
 
@@ -50,21 +51,32 @@
   display: flex;
   justify-content: space-between;
   margin: 0;
-  margin-bottom: 13px;
+  margin-bottom: 11px;
   padding: 0;
   list-style: none;
 
   @media (min-width: $tablet) {
     justify-content: end;
-    gap: 49px;
+    margin: 0;
+    padding-right: 2px;
   }
 
   @media (min-width: $desktop) {
     grid-column: 2 / 3;
     justify-content: space-between;
-    margin: 0;
     margin-right: 40px;
     gap: 0;
+  }
+}
+
+.additional-card__item--mr {
+  @media (min-width: $tablet) {
+    position: absolute;
+    margin-right: 91px;
+  }
+
+  @media (min-width: $tablet) {
+    position: static;
   }
 }
 
