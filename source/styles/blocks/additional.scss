@@ -1,10 +1,50 @@
 .additional__wrapper {
   display: flex;
   flex-direction: column;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 6px;
+  }
 
   @media (min-width: $desktop) {
     flex-direction: row;
     justify-content: space-between;
+    max-width: 1220px;
+    margin: 0 auto 25px;
+  }
+}
+
+.additional__title-wrapper {
+  @media (min-width: $desktop) {
+    margin: 0 auto;
+    max-width: 1220px;
+  }
+}
+
+.additional__item {
+  border-bottom: 1px solid #cdcdcd;
+  min-height: 130px;
+
+  &:first-child {
+    border-top: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: $tablet) {
+    border: 1px solid #cdcdcd;
+    border-bottom: none;
+    min-height: 139px;
+
+    &:last-child {
+      border-bottom: 1px solid #cdcdcd;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    min-width: 894px;
+    min-height: 72px;
+    border: none;
+    border-bottom: 1px solid #cdcdcd;
   }
 }
 
@@ -12,30 +52,53 @@
   display: flex;
   flex-direction: column;
   margin: 0;
+  margin-bottom: 35px;
   padding: 0;
   list-style: none;
-}
-
-.additional__title {
-  margin-left: 20px;
-  border-bottom: 1px solid #cdcdcd;
 
   @media (min-width: $tablet) {
-    margin-left: 30px;
-    border: none;
+    margin-bottom: 0;
+  }
+}
+
+.additional__promo {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  min-width: 280px;
+  min-height: 290px;
+  background-image: linear-gradient(rgb(122, 190, 82, 0.8), rgb(122, 190, 82, 0.8)), url("../../images/gift-mobile@1x.png"), linear-gradient(to right, #a3a3a3, #393939);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgb(122, 190, 82, 0.8), rgb(122, 190, 82, 0.8)), url("../../images/gift-mobile@2x.png"), linear-gradient(to right, #a3a3a3, #393939);
+  }
+
+  @media (min-width: $tablet) {
+    align-items: center;
+    justify-content: end;
+    min-height: 200px;
+    background-image: linear-gradient(rgb(122, 190, 82, 0.8), rgb(122, 190, 82, 0.8)), url("../../images/gift-tablet@1x.png"), linear-gradient(to right, #a3a3a3, #393939);
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgb(122, 190, 82, 0.8), rgb(122, 190, 82, 0.8)), url("../../images/gift-tablet@2x.png"), linear-gradient(to right, #a3a3a3, #393939);
+    }
   }
 
   @media (min-width: $desktop) {
-    margin-left: 110px;
-  }
+    align-items: end;
+    justify-content: center;
+    min-width: unset;
+    min-height: unset;
+    width: 245px;
+    height: 288px;
+    margin-left: 80px;
+    background-image: linear-gradient(rgb(122, 190, 82, 0.8), rgb(122, 190, 82, 0.8)), url("../../images/gift-desktop@1x.png"), linear-gradient(to right, #a3a3a3, #393939);
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 34px;
-    height: 2px;
-    background-color: $green;
-    top: 20px;
-    right: 0;
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgb(122, 190, 82, 0.8), rgb(122, 190, 82, 0.8)), url("../../images/gift-desktop@2x.png"), linear-gradient(to right, #a3a3a3, #393939);
+    }
   }
 }

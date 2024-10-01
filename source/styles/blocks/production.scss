@@ -1,3 +1,10 @@
+.production__wrapper {
+  @media (min-width: $desktop) {
+    margin: 0 auto;
+    max-width: 1220px;
+  }
+}
+
 .production__list {
   display: grid;
   grid-template-rows: auto;
@@ -7,18 +14,64 @@
 
   @media (min-width: $tablet) {
     grid-template-columns: auto auto;
+    gap: 60px;
+    justify-content: center;
   }
 
   @media (min-width: $desktop) {
     grid-template-columns: repeat(4, auto);
+    gap: 63px 80px;
+  }
+}
+
+.production__item {
+  position: relative;
+  min-height: 209px;
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet) {
+    padding: 0 37px;
+    width: 324px;
+    min-height: 511px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 38px;
+    width: 245px;
+    min-height: 511px;
+  }
+
+  &::after {
+    @media (max-width: $mobile) {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: -20px;
+      height: 1px;
+      width: 100vw;
+      background-color: #ebebeb;
+    }
   }
 }
 
 .production__title {
-  margin: 27px 0 41px;
+  margin: 0;
+  padding: 27px 0 41px;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   color: #000000;
+  border-bottom: 1px solid #ebebeb;
+
+  @media (min-width: $tablet) {
+    padding: 65px 0 84px;
+    font-size: 60px;
+    line-height: 60px;
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 74px 0 84px;
+  }
 }

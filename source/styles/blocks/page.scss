@@ -1,5 +1,17 @@
+.page__wrapper {
+  @media (min-width: $desktop) {
+    margin: 0 auto;
+    max-width: 1220px;
+  }
+}
+
 .page__body {
   min-height: 100%;
   margin: 0;
   background-color: #ffffff;
+}
+
+.page__header {
+  max-width: 1220px;
+  margin: 0 auto;
 }

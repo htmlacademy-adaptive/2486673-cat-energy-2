@@ -11,6 +11,12 @@
 
   @media (min-width: $tablet) {
     flex-direction: row;
+    min-height: 147px;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 1220px;
+    margin: 0 auto;
   }
 }
 
@@ -28,6 +34,9 @@
 }
 
 .footer__copyright {
-  display: flex;
-  justify-content: space-between;
+  width: 100%;
+
+  @media (min-width: $tablet) {
+    width: 168px;
+  }
 }

@@ -3,48 +3,53 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: start;
   color: #ffffff;
   text-align: center;
   min-height: 480px;
 
   @media (min-width: $tablet) {
+    justify-content: space-between;
     padding: 65px 30px 0;
+    align-items: flex-start;
   }
 
   @media (min-width: $desktop) {
+    position: static;
+    justify-content: flex-start;
     padding: 0;
-    padding-left: 110px;
     min-height: 580px;
   }
 }
 
-.hero__wrapper {
-  width: 100vw;
-  min-height: 302px;
-  background-color: #64a73c;
-  background-image: url("../../images/hero-background.png");
+.hero::after {
+  position: absolute;
+  background-image: linear-gradient(rgb(122, 190, 82, 0.8), rgb(122, 190, 82, 0.8)), url("../../images/hero-background.png"), linear-gradient(to right, #535257, #403f44);
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+  background-size: cover;
+  background-position: right;
+  width: 100vw;
+  height: 302px;
+  top: 0;
+  left: 0;
+  z-index: -1;
 
-  @media (min-width: $tablet) {
-    width: 100%;
-    min-height: auto;
-    padding-left: 90px;
-    background-color: #ffffff;
-    background-image: none;
-    text-align: left;
-    order: -2;
+  @media (max-width: $mobile) {
+    content: "";
   }
 
   @media (min-width: $desktop) {
-    padding: 110px 0 0 80px;
+    content: "";
+    background-position: left bottom;
+    width: 50%;
+    height: 694px;
+    top: 0;
+    left: 50%;
   }
 }
 
 .hero__title {
-  padding: 25px 35px;
+  padding: 25px 35px 28px;
   margin: 0;
   font-weight: 400;
   font-size: 36px;
@@ -55,12 +60,18 @@
     line-height: 60px;
     color: #000000;
     padding: 0;
+    padding-left: 90px;
     text-align: left;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 110px 0 40px 80px;
   }
 }
 
 .hero__subtitle {
   margin: 0;
+  margin-bottom: 30px;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
@@ -69,26 +80,24 @@
     font-size: 20px;
     line-height: 20px;
     color: #000000;
-    padding: 40px 0 50px;
+    margin: 0;
+    padding: 40px 0 21px 90px;
     text-align: left;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 0 52px 80px;
   }
 }
 
 .hero__image {
-  position: absolute;
-  inset: 0;
-  margin: auto;
-  transform: translateY(20%);
-
-  @media (min-width: $tablet) {
-    position: static;
-    transform: none;
-    order: 3;
-  }
+  display: block;
 
   @media (min-width: $desktop) {
     position: absolute;
-    inset: 0 0 0 50%;
+    top: 143px;
+    left: 50%;
+    transform: translateX(-30%);
   }
 }
 
@@ -96,9 +105,15 @@
   min-width: calc(100vw - 40px);
 
   @media (min-width: $tablet) {
+    position: absolute;
     min-width: 244px;
-    order: -1;
-    align-self: self-start;
+    min-height: 54px;
+    top: 295px;
+    left: 120px;
+  }
+
+  @media (min-width: $desktop) {
+    position: static;
     margin-left: 80px;
   }
 }

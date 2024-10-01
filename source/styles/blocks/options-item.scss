@@ -2,20 +2,10 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 20px 20px 18px;
-  background-color: #f2f2f2;
-  min-height: 266px;
+  justify-content: start;
 
   @media (min-width: $tablet) {
-    padding: 77px 53px 53px;
-    min-height: 372px;
-  }
-
-  @media (min-width: $desktop) {
-    padding: 77px 67px 55px 52px;
-    min-width: 570px;
-    min-height: 374px;
+    justify-content: space-between;
   }
 }
 
@@ -23,7 +13,7 @@
   content: "";
   position: absolute;
   left: 20px;
-  top: 20px;
+  top: 22px;
   background-color: $green;
   border-radius: 50%;
   width: 50px;
@@ -32,25 +22,24 @@
   @media (min-width: $tablet) {
     left: unset;
     right: 63px;
-    top: 92px;
+    top: 95px;
     width: 200px;
-    height: 211px;
+    height: 200px;
   }
 
   @media (min-width: $desktop) {
-    left: 50px;
+    left: 52px;
     right: unset;
-    top: 40px;
+    top: 46px;
     width: 100px;
     height: 100px;
   }
 }
 
-
 .options-item--slim::after {
   content: "";
   position: absolute;
-  left: 30px;
+  left: 26px;
   top: 20px;
   background-image: url("../../icons/stack.svg#cat-sit");
   background-repeat: no-repeat;
@@ -60,7 +49,7 @@
   @media (min-width: $tablet) {
     left: unset;
     right: 93px;
-    top: 92px;
+    top: 84px;
     width: 140px;
     height: 194px;
   }
@@ -68,7 +57,7 @@
   @media (min-width: $desktop) {
     left: 67px;
     right: unset;
-    top: 40px;
+    top: 41px;
     width: 70px;
     height: 97px;
   }
@@ -77,8 +66,8 @@
 .options-item--pro::after {
   content: "";
   position: absolute;
-  left: 10px;
-  top: 30px;
+  left: 12px;
+  top: 35px;
   background-image: url("../../icons/stack.svg#cat-walk");
   background-repeat: no-repeat;
   width: 67px;
@@ -103,7 +92,8 @@
 
 .options-item__title {
   margin: 0;
-  padding-left: 90px;
+  margin-bottom: 29px;
+  padding-left: 70px;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
@@ -111,42 +101,37 @@
   color: #000000;
 
   @media (min-width: $tablet) {
+    margin: 0;
     padding: 0;
+    font-size: 36px;
+    line-height: 36px;
   }
 
   @media (min-width: $desktop) {
-    padding-left: 214px;
+    padding-left: 161px;
   }
 }
 
 .options-item__description {
   position: relative;
   margin: 0;
-  flex-grow: 1;
-  padding-top: 29px;
+  padding-bottom: 23px;
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+  border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet) {
-    padding: 24px 50% 48px 0;
+    padding: 24px 49% 48px 0;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+    flex-grow: 1;
   }
 
   @media (min-width: $desktop) {
     padding: 73px 0 23px;
-  }
-}
-
-
-@media (max-width: $mobile) {
-  .options-item__description::after {
-    content: "";
-    position: absolute;
-    bottom: 15px;
-    left: 0;
-    width: 100%;
-    border: 1px solid #d9d9d9;
   }
 }
 
@@ -159,26 +144,43 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+  padding: 18px 10px 0 0;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 29px;
+    padding: 8px 10px 10px 0;
+  }
 
   &:active {
     opacity: 0.3;
   }
 }
 
-.options-item__link::after {
+.options-item__text {
+  position: relative;
+}
+
+.options-item__text::after {
   content: "";
   position: absolute;
-  right: 0;
-  top: 25%;
+  right: -50px;
+  bottom: 7px;
   mask-image: url("../../icons/stack.svg#arrow-program");
   mask-repeat: no-repeat;
   mask-size: 32px 10px;
   mask-position: -8px;
   background-color: #000000;
   width: 32px;
-  height: 10px;
+  height: 12px;
+
+  @media (min-width: $tablet) {
+    right: -60px;
+    bottom: 10px;
+  }
 }
 
-.options-item__link:hover::after {
+
+.options-item__text:hover::after {
   mask-position: -3px;
 }

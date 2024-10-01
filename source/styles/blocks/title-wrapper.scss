@@ -1,0 +1,68 @@
+.title-wrapper {
+  position: relative;
+  padding: 25px 0 33px 20px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 2px;
+    background-color: $green;
+    top: 34px;
+    right: 0;
+    z-index: -1;
+  }
+
+  @media (min-width: $tablet) {
+    padding: 74px 0 80px 40px;
+
+    &::after {
+      top: 87px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 77px;
+
+    &::after {
+      box-shadow: 100vw 0 0 0 $green;
+    }
+  }
+}
+
+.title-wrapper--pb {
+  padding-bottom: 32px;
+
+  @media (min-width: $tablet) {
+    padding-bottom: 66px;
+  }
+
+  @media (min-width: $tablet) {
+    padding-bottom: 70px;
+  }
+}
+
+.title-wrapper__title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: left;
+  color: #000000;
+  width: fit-content;
+  background-color: #ffffff;
+  box-shadow: -40px 0 0 0 #ffffff, 40px 0 0 0 #ffffff;
+
+  @media (min-width: $tablet) {
+    font-size: 32px;
+    line-height: 32px;
+    margin-left: 30px;
+    border: none;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 70px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+}

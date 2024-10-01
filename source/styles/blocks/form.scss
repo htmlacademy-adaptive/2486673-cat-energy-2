@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
   border: none;
+
+  &--cat {
+    margin-bottom: 25px;
+  }
 }
 
 .form__list {
@@ -10,8 +14,8 @@
   list-style: none;
 }
 
-.form__item {
-  margin-bottom: 25px;
+.form__item:not(:last-child) {
+  margin-bottom: 14px;
 }
 
 .form__title {
@@ -48,9 +52,32 @@
 }
 
 //Radio
+
 .form__cat-data--goal {
-  padding: 20px 20px 20px 45px;
-  border: 1px solid #e7e7e7;
+  position: relative;
+  padding: 22px 20px 19px 45px;
+
+  @media (max-width: $mobile) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -20px;
+      height: 1px;
+      width: 100vw;
+      background-color: #ebebeb;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: -20px;
+      height: 1px;
+      width: 100vw;
+      background-color: #ebebeb;
+    }
+  }
 }
 
 .form__label--radio::before {
