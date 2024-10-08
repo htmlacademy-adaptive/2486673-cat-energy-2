@@ -28,7 +28,7 @@
 
   @media (min-width: $desktop) {
     grid-column: 1 / 2;
-    padding: 20px 0 27px;
+    padding: 20px 0;
   }
 }
 
@@ -71,12 +71,7 @@
 
 .additional-card__item--mr {
   @media (min-width: $tablet) {
-    position: absolute;
-    margin-right: 91px;
-  }
-
-  @media (min-width: $tablet) {
-    position: static;
+    margin-right: 51px;
   }
 }
 

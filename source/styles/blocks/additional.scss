@@ -11,7 +11,7 @@
     flex-direction: row;
     justify-content: space-between;
     max-width: 1220px;
-    margin: 0 auto 25px;
+    margin: 0 auto;
   }
 }
 
@@ -57,7 +57,11 @@
   list-style: none;
 
   @media (min-width: $tablet) {
-    margin-bottom: 0;
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0;
   }
 }
 

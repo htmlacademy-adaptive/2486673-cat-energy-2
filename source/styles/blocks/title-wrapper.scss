@@ -22,7 +22,7 @@
   }
 
   @media (min-width: $desktop) {
-    padding-bottom: 77px;
+    padding: 74px 0 77px;
 
     &::after {
       box-shadow: 100vw 0 0 0 $green;
@@ -37,7 +37,7 @@
     padding-bottom: 66px;
   }
 
-  @media (min-width: $tablet) {
+  @media (min-width: $desktop) {
     padding-bottom: 70px;
   }
 }
@@ -61,7 +61,7 @@
   }
 
   @media (min-width: $desktop) {
-    margin-left: 70px;
+    margin: 0;
     font-size: 40px;
     line-height: 40px;
   }
