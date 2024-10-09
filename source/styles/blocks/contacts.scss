@@ -25,6 +25,7 @@
 .contacts__invite {
   min-height: 60px;
   background-color: inherit;
+  cursor: default;
 
   @media (min-width: $tablet) {
     min-height: 80px;
