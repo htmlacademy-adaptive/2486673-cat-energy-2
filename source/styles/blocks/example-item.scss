@@ -10,6 +10,7 @@
   min-height: 56px;
   border: 1px solid #cdcdcd;
   border-radius: 5px;
+  cursor: default;
 
   @media (min-width: $tablet) {
     font-size: 30px;
@@ -31,6 +32,7 @@
   width: 77px;
   height: 24px;
   background-color: #eaeaea;
+  cursor: default;
 
   @media (min-width: $tablet) {
     font-size: 14px;

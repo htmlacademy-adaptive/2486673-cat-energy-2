@@ -28,6 +28,11 @@
   color: #444444;
   cursor: pointer;
 
+  &:hover,
+  &:focus {
+    color: $green;
+  }
+
   &:active {
     opacity: 30%;
   }

@@ -2,7 +2,11 @@
   background-color: #eaeaea;
 
   @media (min-width: $tablet) {
-    background: linear-gradient(to top, #eaeaea 462px, #ffffff 462px);
+    background: linear-gradient(to bottom, #ffffff 621px, #eaeaea 621px);
+  }
+
+  @media (min-width: $desktop) {
+    background: linear-gradient(to bottom, #ffffff  205px, #eaeaea 205px);
   }
 }
 
@@ -13,39 +17,40 @@
 
   @media (min-width: $tablet) {
     border-top: 1px solid #e6e6e6;
-    padding: 0 30px 100px;
+    padding: 0 30px 97px;
   }
 
   @media (min-width: $desktop) {
     border: none;
     max-width: 1220px;
     min-height: 598px;
-    margin: 69px auto 0;
-    margin-top: 69px;
-    padding: 0;
-    padding-bottom: 67px;
+    margin: 0 auto;
+    padding: 21px 0 76px;
   }
 }
 
 .example__title {
   grid-column: 1 / -1;
   margin: 0;
-  margin-top: 25px;
+  margin-bottom: 40px;
+  padding-top: 25px;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   text-align: left;
   color: #000000;
+  cursor: default;
 
   @media (min-width: $tablet) {
     font-size: 60px;
     line-height: 60px;
-    margin-top: 45px;
+    padding-top: 45px;
+    margin-bottom: 58px;
   }
 
   @media (min-width: $desktop) {
     grid-column: 1 / 2;
-    margin: 0;
+    margin-bottom: 150px;
   }
 }
 
@@ -56,19 +61,20 @@
   line-height: 18px;
   color: #444444;
   margin: 0;
-  margin-top: 40px;
+  margin-bottom: 20px;
+  cursor: default;
 
   @media (min-width: $tablet) {
     font-size: 16px;
     line-height: 24px;
-    margin-top: 58px;
     max-width: 708px;
+    margin-bottom: 59px;
   }
 
   @media (min-width: $desktop) {
     grid-column: 1 / 2;
-    margin-top: 143px;
     max-width: 432px;
+    margin-bottom: 69px;
   }
 }
 
@@ -79,20 +85,20 @@
   justify-self: center;
   gap: 32px;
   margin: 0;
-  margin-top: 20px;
+  margin-bottom: 20px;
   padding: 0;
   list-style: none;
 
   @media (min-width: $tablet) {
     grid-column: 1 / 2;
-    margin-top: 55px;
     justify-self: left;
     gap: 43px;
+    margin: 0;
   }
 
   @media (min-width: $desktop) {
     grid-column: 1 / 2;
-    margin-top: 69px;
+    margin-bottom: 45px;
   }
 }
 
@@ -105,7 +111,8 @@
   line-height: 20px;
   text-transform: uppercase;
   margin: 0;
-  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: default;
 
   @media (min-width: $tablet) {
     grid-column: 2 / 3;
@@ -115,7 +122,8 @@
     gap: 9px;
     font-size: 20px;
     line-height: 20px;
-    margin-top: 64px;
+    margin-bottom: 115px;
+    padding-top: 10px;
   }
 
   @media (min-width: $desktop) {
@@ -123,21 +131,23 @@
     flex-direction: row;
     justify-self: left;
     gap: 66px;
-    margin-top: 39px;
+    padding: 0;
+    margin: 0;
   }
 }
 
 .example__slider {
   grid-column: 1 / -1;
-  margin-bottom: 55px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet) {
-    margin-bottom: 86px;
+    margin: 0;
   }
 
   @media (min-width: $desktop) {
     margin: 0;
     grid-column: 2 / 3;
     grid-row: 1 / -1;
+    place-self: end end;
   }
 }

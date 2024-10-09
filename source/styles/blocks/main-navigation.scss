@@ -31,6 +31,7 @@
 
   @media (min-width: $tablet) {
     display: flex;
+    gap: 34px;
   }
 
   @media (min-width: $desktop) {
@@ -65,21 +66,21 @@
     display: block;
     font-size: 18px;
     line-height: 24px;
-    padding: 12px 13px 12px 20px;
+    padding: 12px 0;
   }
 
   @media (min-width: $desktop) {
     font-size: 20px;
     line-height: 30px;
-    padding-left: 22px;
-
-    &--nopadding {
-      padding-right: 0;
-    }
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -88,8 +89,8 @@
     content: "";
     position: absolute;
     bottom: 1px;
-    left: 22px;
-    right: 11px;
+    left: 0;
+    right: 0;
     height: 3px;
     background-color: $green;
   }

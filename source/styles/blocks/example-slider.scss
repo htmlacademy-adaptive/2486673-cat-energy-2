@@ -1,11 +1,24 @@
 .example-slider {
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .example-slider__before {
-  display: none;
+  clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
+}
+
+.example-slider__after {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
 }
 
 .example-slider__button {
-  display: none;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-51%);
 }
