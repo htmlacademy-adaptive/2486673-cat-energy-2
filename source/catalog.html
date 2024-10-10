@@ -10,6 +10,7 @@
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/apple.png"><!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="../fonts/oswald/oswaldregular.woff2" as="font">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -47,7 +48,7 @@
   <main class="catalog page__main">
     <div class="page__wrapper">
       <h1 class="visually-hidden">Каталог продукции кэт энерджи</h1>
-      <section class="production">
+      <section class="production" data-test="catalog">
         <div class="section-container production__wrapper">
           <h2 class="production__title">Каталог продукции</h2>
           <ul class="production__list">
@@ -225,7 +226,7 @@
         </div>
       </section>
     </div>
-    <section class="additional">
+    <section class="additional" data-test="additional">
       <div class="additional__title-wrapper title-wrapper">
         <h2 class="additional__title title-wrapper__title">Дополнительные товары</h2>
       </div>

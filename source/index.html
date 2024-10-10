@@ -10,11 +10,12 @@
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/apple.png"><!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="../fonts/oswald/oswaldregular.woff2" as="font">
   <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
-  <header class="page__header main-header">
+  <header class="page__header main-header" data-test="header">
     <div class="main-header__wrapper">
       <a class="main-header__link" href="#">
         <picture>
@@ -46,7 +47,7 @@
   </header>
   <main class="main-index page__main">
     <div class="page__wrapper">
-      <section class="hero">
+      <section class="hero" data-test="hero">
         <h1 class="hero__title">Функциональное <br> питание для котов</h1>
         <p class="hero__subtitle">Занялся собой? Займись котом!</p>
         <picture>
@@ -56,7 +57,7 @@
         </picture>
         <a class="hero__button button button--program" href="form.html">Подобрать программу</a>
       </section>
-      <section class="options">
+      <section class="options" data-test="programs">
         <h2 class="visually-hidden">Выбор типа корма по параметрам питомца</h2>
         <div class="section-container">
           <ul class="options__list">
@@ -77,7 +78,7 @@
           </ul>
         </div>
       </section>
-      <section class="benefits">
+      <section class="benefits" data-test="features">
         <h2 class="visually-hidden">Описание преимуществ продукции</h2>
         <div class="section-container">
           <h3 class="benefits__title">Как это работает</h3>
@@ -98,7 +99,7 @@
         </div>
       </section>
     </div>
-    <section class="example">
+    <section class="example" data-test="proof">
       <h2 class="visually-hidden">Пример использования корма кэт энерджи</h2>
       <div class="example__wrapper section-container">
         <h3 class="example__title">Живой пример</h3>
@@ -132,7 +133,7 @@
         </div>
       </div>
     </section>
-    <section class="contacts">
+    <section class="contacts" data-test="contacts">
       <h2 class="visually-hidden">Карта с местоположением компании кэт энерджи</h2>
       <div class="section-container section-container--contacts contacts__wrapper">
         <div class="contacts__invite contacts-invite">
@@ -153,7 +154,7 @@
         </picture>
       </noscript>
     </section>
-    <footer class="footer">
+    <footer class="footer" data-test="footer">
       <h2 class="visually-hidden">Социальные сети</h2>
       <div class="footer__wrapper section-container section-container--footer">
         <a class="footer__link" href="#">
