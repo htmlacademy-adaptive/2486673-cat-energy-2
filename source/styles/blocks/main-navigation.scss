@@ -31,10 +31,14 @@
 
   @media (min-width: $tablet) {
     display: flex;
-    gap: 34px;
+    column-gap: 34px;
   }
 
   @media (min-width: $desktop) {
+    flex-wrap: wrap;
+    justify-content: end;
+    max-width: 480px;
+
     &--white {
       color: #ffffff;
     }

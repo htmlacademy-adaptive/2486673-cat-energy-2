@@ -23,19 +23,20 @@
 }
 
 .hero::after {
+  content: "";
   position: absolute;
   background-image: linear-gradient(rgb(122, 190, 82, 0.8), rgb(122, 190, 82, 0.8)), url("../../images/hero-background.png"), linear-gradient(to right, #535257, #403f44);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: right;
+  background-position: 70%;
   width: 100vw;
   height: 302px;
   top: 0;
   left: 0;
   z-index: -1;
 
-  @media (max-width: $mobile) {
-    content: "";
+  @media (min-width: $tablet) {
+    content: none;
   }
 
   @media (min-width: $desktop) {
@@ -67,6 +68,7 @@
 
   @media (min-width: $desktop) {
     padding: 110px 0 40px 80px;
+    max-width: 500px;
   }
 }
 
@@ -89,6 +91,7 @@
 
   @media (min-width: $desktop) {
     padding: 0 0 52px 80px;
+    max-width: 450px;
   }
 }
 

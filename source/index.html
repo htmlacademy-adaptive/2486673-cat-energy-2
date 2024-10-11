@@ -10,11 +10,13 @@
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/apple.png"><!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="../fonts/oswald/oswaldregular.woff2" as="font">
+  <link rel="preload" href="../fonts/lato/Lato-Regular.woff2" as="font">
   <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
-  <header class="page__header main-header">
+  <header class="page__header main-header" data-test="header">
     <div class="main-header__wrapper">
       <a class="main-header__link" href="#">
         <picture>
@@ -46,17 +48,20 @@
   </header>
   <main class="main-index page__main">
     <div class="page__wrapper">
-      <section class="hero">
+      <section class="hero" data-test="hero">
         <h1 class="hero__title">Функциональное <br> питание для котов</h1>
         <p class="hero__subtitle">Занялся собой? Займись котом!</p>
         <picture>
+          <source width="552" height="499" type="image/webp" media="(min-width: 1440px)" srcset="images/hero-can-desktop@1x.webp 1x, images/hero-can-desktop@2x.webp 2x">
+          <source width="706" height="609" type="image/webp" media="(min-width: 768px)" srcset="images/hero-can-tablet@1x.webp 1x, images/hero-can-tablet@2x.webp 2x">
+          <source width="280" height="270" type="image/webp" srcset="images/hero-can-mobile@1x.webp 1x, images/hero-can-mobile@2x.webp 2x">
           <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/hero-can-desktop@1x.png 1x, images/hero-can-desktop@2x.png 2x">
           <source width="706" height="609" type="image/png" media="(min-width: 768px)" srcset="images/hero-can-tablet@1x.png 1x, images/hero-can-tablet@2x.png 2x">
           <img class="hero__image" src="images/hero-can-mobile@1x.png" srcset="images/hero-can-mobile@2x.png 2x" width="280" height="270" alt="Упаковка корма для кошек бренда Cat energy.">
         </picture>
         <a class="hero__button button button--program" href="form.html">Подобрать программу</a>
       </section>
-      <section class="options">
+      <section class="options" data-test="programs">
         <h2 class="visually-hidden">Выбор типа корма по параметрам питомца</h2>
         <div class="section-container">
           <ul class="options__list">
@@ -77,7 +82,7 @@
           </ul>
         </div>
       </section>
-      <section class="benefits">
+      <section class="benefits" data-test="features">
         <h2 class="visually-hidden">Описание преимуществ продукции</h2>
         <div class="section-container">
           <h3 class="benefits__title">Как это работает</h3>
@@ -98,7 +103,7 @@
         </div>
       </section>
     </div>
-    <section class="example">
+    <section class="example" data-test="proof">
       <h2 class="visually-hidden">Пример использования корма кэт энерджи</h2>
       <div class="example__wrapper section-container">
         <h3 class="example__title">Живой пример</h3>
@@ -119,10 +124,14 @@
         </p>
         <div class="example__slider example-slider">
           <picture>
+            <source width="560" height="512" type="image/webp" media="(min-width: 768px)" srcset="images/slider-before-tablet@1x.webp 1x, images/slider-before-tablet@2x.webp 2x">
+            <source width="280" height="256" type="image/webp" srcset="images/slider-before-mobile@1x.webp 1x, images/slider-before-mobile@2x.webp 2x">
             <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slider-before-tablet@1x.png 1x, images/slider-before-tablet@2x.png 2x">
             <img class="example-slider__before" src="images/slider-before-mobile@1x.png" srcset="images/slider-before-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот до питания кормом Cat energy">
           </picture>
           <picture>
+            <source width="560" height="512" type="image/webp" media="(min-width: 768px)" srcset="images/slider-after-tablet@1x.webp 1x, images/slider-after-tablet@2x.webp 2x">
+            <source width="280" height="256" type="image/webp" srcset="images/slider-after-mobile@1x.webp 1x, images/slider-after-mobile@2x.webp 2x">
             <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slider-after-tablet@1x.png 1x, images/slider-after-tablet@2x.png 2x">
             <img class="example-slider__after" src="images/slider-after-mobile@1x.png" srcset="images/slider-after-mobile@2x.png 2x" width="280" height="256" alt="Худой кот после питания кормом Cat energy">
           </picture>
@@ -132,7 +141,7 @@
         </div>
       </div>
     </section>
-    <section class="contacts">
+    <section class="contacts" data-test="contacts">
       <h2 class="visually-hidden">Карта с местоположением компании кэт энерджи</h2>
       <div class="section-container section-container--contacts contacts__wrapper">
         <div class="contacts__invite contacts-invite">
@@ -147,13 +156,16 @@
       </iframe>
       <noscript>
         <picture>
+          <source width="1440" height="400" type="image/webp" media="(min-width: 1440px)" srcset="images/location-desktop@1x.webp 1x, images/location-desktop@2x.webp 2x">
+          <source width="768" height="400" type="image/webp" media="(min-width: 768px)" srcset="images/location-tablet@1x.webp 1x, images/location-tablet@2x.webp 2x">
+          <source width="320" height="362" type="image/webp" srcset="images/location-mobile@1x.webp 1x, images/location-mobile@2x.webp 2x">
           <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/location-desktop@1x.png 1x, images/location-desktop@2x.png 2x">
           <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/location-tablet@1x.png, images/location-tablet@2x.png 2x">
           <img class="contacts__map" src="images/location-mobile@1x.png" srcset="images/location-mobile@2x.png 2x" width="320" height="362" alt="Карта с местоположением компании Cat energy.">
         </picture>
       </noscript>
     </section>
-    <footer class="footer">
+    <footer class="footer" data-test="footer">
       <h2 class="visually-hidden">Социальные сети</h2>
       <div class="footer__wrapper section-container section-container--footer">
         <a class="footer__link" href="#">
