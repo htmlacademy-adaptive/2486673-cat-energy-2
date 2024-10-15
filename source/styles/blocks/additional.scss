@@ -67,6 +67,8 @@
 
 .additional__promo {
   display: flex;
+  flex-wrap: wrap;
+  padding-top: 150px;
   justify-content: center;
   align-items: end;
   min-width: 280px;
@@ -81,6 +83,9 @@
   }
 
   @media (min-width: $tablet) {
+    padding: 0;
+    padding-left: 200px;
+    row-gap: 20px;
     align-items: center;
     justify-content: end;
     min-height: 200px;
@@ -92,12 +97,12 @@
   }
 
   @media (min-width: $desktop) {
+    padding: 0;
+    padding-top: 150px;
     align-items: end;
     justify-content: center;
-    min-width: unset;
-    min-height: unset;
-    width: 245px;
-    height: 288px;
+    min-width: 245px;
+    min-height: 288px;
     margin-left: 80px;
     background-image: linear-gradient(rgb(122, 190, 82, 0.8), rgb(122, 190, 82, 0.8)), url("../../images/gift-desktop@1x.png"), linear-gradient(to right, #a3a3a3, #393939);
 

@@ -15,37 +15,9 @@
   }
 
   @media (min-width: $desktop) {
-    position: static;
     justify-content: flex-start;
     padding: 0;
     min-height: 580px;
-  }
-}
-
-.hero::after {
-  content: "";
-  position: absolute;
-  background-image: linear-gradient(rgb(122, 190, 82, 0.8), rgb(122, 190, 82, 0.8)), url("../../images/hero-background.png"), linear-gradient(to right, #535257, #403f44);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 70%;
-  width: 100vw;
-  height: 302px;
-  top: 0;
-  left: 0;
-  z-index: -1;
-
-  @media (min-width: $tablet) {
-    content: none;
-  }
-
-  @media (min-width: $desktop) {
-    content: "";
-    background-position: left bottom;
-    width: 50%;
-    height: 694px;
-    top: 0;
-    left: 50%;
   }
 }
 
@@ -100,7 +72,7 @@
 
   @media (min-width: $desktop) {
     position: absolute;
-    top: 143px;
+    top: 30px;
     left: 50%;
     transform: translateX(-30%);
   }
