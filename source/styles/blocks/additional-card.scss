@@ -49,6 +49,8 @@
 
 .additional-card__list {
   display: flex;
+  flex-wrap: wrap;
+  position: relative;
   justify-content: space-between;
   margin: 0;
   margin-bottom: 11px;
@@ -70,9 +72,15 @@
   }
 }
 
-.additional-card__item--mr {
+.additional-card__item {
   @media (min-width: $tablet) {
-    margin-right: 51px;
+    min-width: 91px;
+    text-align: end;
+  }
+
+  @media (min-width: $desktop) {
+    min-width: 40px;
+    text-align: start;
   }
 }
 

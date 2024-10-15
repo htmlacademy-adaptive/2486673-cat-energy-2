@@ -3,20 +3,24 @@
   justify-content: space-between;
   text-decoration: none;
   gap: 24px;
+
+  &:hover .copyright__logo,
+  &:focus .copyright__logo {
+    color: $green;
+  }
+
+  &:active .copyright__logo {
+    color: $green;
+    opacity: 0.3;
+  }
+
+  &:active .copyright__title {
+    opacity: 0.3;
+  }
 }
 
 .copyright__logo {
   color: #666666;
-
-  &:hover,
-  &:focus {
-    color: $green;
-  }
-
-  &:active {
-    color: $green;
-    opacity: 0.3;
-  }
 }
 
 .copyright__title {
@@ -27,13 +31,4 @@
   align-self: center;
   color: #444444;
   cursor: pointer;
-
-  &:hover,
-  &:focus {
-    color: $green;
-  }
-
-  &:active {
-    opacity: 30%;
-  }
 }
